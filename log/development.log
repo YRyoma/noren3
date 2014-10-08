@@ -12557,3 +12557,209 @@ Processing by EatController#show as HTML
   [1m[35mArticle Load (0.4ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = $1 LIMIT 1  [["id", 1]]
   Rendered eat/show.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:50:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1097ms (Views: 1079.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/eat.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/colum.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/general.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/enjoy.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/shop.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/other.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/spot.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/colum.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/eat.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/enjoy.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/general.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/shop.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/other.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/spot.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:50:53 -0700
+
+
+Started GET "/spot" for 127.0.0.1 at 2014-10-08 13:50:55 -0700
+Processing by SpotController#index as HTML
+  Rendered spot/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enjoy" for 127.0.0.1 at 2014-10-08 13:50:56 -0700
+Processing by EnjoyController#index as HTML
+  Rendered enjoy/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/other" for 127.0.0.1 at 2014-10-08 13:50:56 -0700
+Processing by OtherController#index as HTML
+  Rendered other/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/spot" for 127.0.0.1 at 2014-10-08 13:50:57 -0700
+Processing by SpotController#index as HTML
+  Rendered spot/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 104ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eat" for 127.0.0.1 at 2014-10-08 13:50:57 -0700
+Processing by EatController#index as HTML
+  [1m[35mArticle Load (22.6ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'eat'
+  Rendered eat/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 166ms (Views: 100.3ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/eat" for 127.0.0.1 at 2014-10-08 13:50:57 -0700
+Processing by EatController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'eat'[0m
+  Rendered eat/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/shop" for 127.0.0.1 at 2014-10-08 13:50:58 -0700
+Processing by ShopController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'shop'
+  Rendered shop/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/spot" for 127.0.0.1 at 2014-10-08 13:50:58 -0700
+Processing by SpotController#index as HTML
+  Rendered spot/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enjoy" for 127.0.0.1 at 2014-10-08 13:50:59 -0700
+Processing by EnjoyController#index as HTML
+  Rendered enjoy/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eat" for 127.0.0.1 at 2014-10-08 13:51:00 -0700
+Processing by EatController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'eat'[0m
+  Rendered eat/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/shop" for 127.0.0.1 at 2014-10-08 13:51:00 -0700
+Processing by ShopController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'shop'
+  Rendered shop/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 114ms (Views: 112.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/spot" for 127.0.0.1 at 2014-10-08 13:51:01 -0700
+Processing by SpotController#index as HTML
+  Rendered spot/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enjoy" for 127.0.0.1 at 2014-10-08 13:51:02 -0700
+Processing by EnjoyController#index as HTML
+  Rendered enjoy/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/other" for 127.0.0.1 at 2014-10-08 13:51:02 -0700
+Processing by OtherController#index as HTML
+  Rendered other/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/eat" for 127.0.0.1 at 2014-10-08 13:51:13 -0700
+Processing by EatController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."article_category" = 'eat'[0m
+  Rendered eat/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/other" for 127.0.0.1 at 2014-10-08 13:51:20 -0700
+Processing by OtherController#index as HTML
+  Rendered other/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-10-08 13:51:21 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-10-08 13:51:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 120ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-10-08 13:51:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-10-08 13:51:23 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.0ms)
