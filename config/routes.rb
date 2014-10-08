@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'shop_index/index'
+
+  get 'shop_index/show'
+
+  get 'shop_index/new'
+
+  get 'shop_index/edit'
+
   resources :eat
   resources :shop
   resources :spot
@@ -9,6 +17,8 @@ Rails.application.routes.draw do
   resources :colum
   resources :about
   resources :home
+  resources :shop_index
+
 
 root 'home#index'
 

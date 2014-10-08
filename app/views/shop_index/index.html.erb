@@ -1,0 +1,6 @@
+<h1>店舗情報</h1>
+
+<% @shops.each do |info| %>
+<h2><%= link_to info.shop_name, shop_index_path(shop.id) %></h2>
+
+<% end %>

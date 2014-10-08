@@ -5,9 +5,9 @@ class GeneralController < ApplicationController
   def show
   end
 
-  def new
+  def edit
   end
 
-  def edit
+  def new
   end
 end
