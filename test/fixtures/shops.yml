@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shop_name: MyText
+  shop_address: MyText
+  shop_time: MyText
+  shop_phone: MyText
+  shop_map: MyText
+  shop_web: MyText
+  shop_photo: MyText
+  shop_description: MyText
+  shop_price: MyText
+
+two:
+  shop_name: MyText
+  shop_address: MyText
+  shop_time: MyText
+  shop_phone: MyText
+  shop_map: MyText
+  shop_web: MyText
+  shop_photo: MyText
+  shop_description: MyText
+  shop_price: MyText
