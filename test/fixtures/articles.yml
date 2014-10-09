@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  article_content: MyText
-  article_title: MyText
-  article_tags: MyText
-  article_category: MyText
-  user_id: 1
+  content: MyText
+  title: MyText
+  tags: MyText
+  category: MyText
+  member_id: 1
 
 two:
-  article_content: MyText
-  article_title: MyText
-  article_tags: MyText
-  article_category: MyText
-  user_id: 1
+  content: MyText
+  title: MyText
+  tags: MyText
+  category: MyText
+  member_id: 1

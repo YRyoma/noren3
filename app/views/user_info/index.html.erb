@@ -1,8 +1,0 @@
-
-<h1>WHO ARE WE?</h1>
-
-
-<% @users.each do |user| %>
-<h2><%= link_to user.display_name, user_info_path(user.id) %></h2>
-
-<% end %>

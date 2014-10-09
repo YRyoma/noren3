@@ -1,8 +1,7 @@
-<h1>WHAT TO SHOP IN PORTLAND</h1>
-
+<h1>Shop#index</h1>
 <% @articles.each do |article| %>
+<p><%= link_to article.title, shop_path(article.id) %></p>
+<p><%= link_to article.member.name, member_path(article.member.id) %></p>
 
-<h2><h2><%= link_to article.article_title, shop_path(article.id) %></h2>
-<p><%= article.user.display_name %></p>
 
 <% end %>
