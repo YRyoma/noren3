@@ -1,12 +1,10 @@
 class ShopController < ApplicationController
   def index
-  	@articles = Article.where(article_category: 'shop')
-    render 'shop/index'
+  	@articles = Article.where(category: 'shop')
   end
 
   def show
-    @article = Article.find(params[:id])
-    render 'shop/show'
+  	@article = Article.find(params[:id])
   end
 
   def edit

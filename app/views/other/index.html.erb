@@ -1,7 +1,0 @@
-<h1>OTHER THINGS  TO  DO  IN PORTLAND</h1>
-
-<% @articles.each do |article| %>
-<h2><%= link_to article.article_title, other_path(article.id) %></h2>
-<p><%= article.user.display_name %></p>
-
-<% end %>

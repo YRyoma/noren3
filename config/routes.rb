@@ -1,107 +1,73 @@
 Rails.application.routes.draw do
 
-  get 'shop_index/index'
+  get 'stay/index'
+  get 'stay/show'
+  get 'stay/edit'
+  get 'stay/new'
 
-  get 'shop_index/show'
+  get 'meet/index'
+  get 'meet/show'
+  get 'meet/edit'
+  get 'meet/new'
 
-  get 'shop_index/new'
+  get 'study/index'
+  get 'study/show'
+  get 'study/edit'
+  get 'study/new'
 
-  get 'shop_index/edit'
+  get 'food/index'
+  get 'food/show'
+  get 'food/edit'
+  get 'food/new'
 
-  resources :eat
-  resources :shop
-  resources :spot
-  resources :enjoy
-  resources :other
-  resources :general
-  resources :colum
-  resources :about
   resources :home
-  resources :shop_index
+  resources :about
+  resources :column
+  resources :food
+  resources :enjoy
+  resources :general
+  resources :member
+  resources :meet
+  resources :shop
+  resources :stay
+  resources :study
 
-
-root 'home#index'
-
-
-  get 'other/show'
-
-  get 'enjoy/show'
-
-  get 'spot/show'
-
-  get 'shop/show'
-
-  get 'general/index'
-
-  get 'general/show'
-
-  get 'general/new'
-
-  get 'general/edit'
-
-  get 'spot/index'
-
-  get 'spot/shop'
-
-  get 'spot/new'
-
-  get 'spot/edit'
-
-  get 'other/index'
-
-  get 'other/shop'
-
-  get 'other/new'
-
-  get 'other/edit'
-
-  get 'enjoy/index'
-
-  get 'enjoy/shop'
-
-  get 'enjoy/new'
-
-  get 'enjoy/edit'
-
-  get 'shop/index'
-
-  get 'shop/shop'
-
-  get 'shop/new'
-
-  get 'shop/edit'
-
-  get 'colum/index'
-
-  get 'colum/show'
-
-  get 'colum/edit'
-
-  get 'colum/new'
+  root 'home#index'
 
   get 'about/index'
-
   get 'about/show'
-
   get 'about/edit'
-
   get 'about/new'
 
+  get 'enjoy/index'
+  get 'enjoy/show'
+  get 'enjoy/edit'
+  get 'enjoy/new'
+
+  get 'shop/index'
+  get 'shop/show'
+  get 'shop/edit'
+  get 'shop/new'
+
+  get 'general/index'
+  get 'general/show'
+  get 'general/edit'
+  get 'general/new'
+
+  get 'column/index'
+  get 'column/show'
+  get 'column/edit'
+  get 'column/new'
+
+  get 'member/index'
+  get 'member/show'
+  get 'member/edit'
+  get 'member/new'
+
   get 'home/index'
-
   get 'home/show'
-
   get 'home/edit'
-
   get 'home/new'
-
-  get 'eat/index'
-
-  get 'eat/show'
-
-  get 'eat/new'
-
-  get 'eat/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
