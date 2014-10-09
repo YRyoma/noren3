@@ -11,42 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141006232906) do
+ActiveRecord::Schema.define(version: 20141009101357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: true do |t|
-    t.text     "article_content"
-    t.text     "article_title"
-    t.text     "article_tags"
-    t.text     "article_category"
-    t.integer  "user_id"
+    t.text     "content"
+    t.text     "title"
+    t.text     "tags"
+    t.text     "category"
+    t.integer  "member_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "shops", force: true do |t|
-    t.text     "shop_name"
-    t.text     "shop_address"
-    t.text     "shop_time"
-    t.text     "shop_phone"
-    t.text     "shop_map"
-    t.text     "shop_web"
-    t.text     "shop_photo"
-    t.text     "shop_description"
-    t.text     "shop_price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.text     "user_login"
-    t.text     "user_pass"
-    t.text     "user_nicename"
-    t.text     "user_email"
-    t.text     "user_url"
-    t.text     "display_name"
+  create_table "members", force: true do |t|
+    t.text     "login"
+    t.text     "pass"
+    t.text     "nicename"
+    t.text     "email"
+    t.text     "url1"
+    t.text     "url2"
+    t.text     "name"
+    t.text     "photo"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

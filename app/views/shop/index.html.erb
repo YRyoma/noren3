@@ -1,10 +1,7 @@
-
-<h2>WHAT TO EAT IN PORTLAND</h2>
-
+<h1>Shop#index</h1>
 <% @articles.each do |article| %>
+<p><%= link_to article.title, shop_path(article.id) %></p>
+<p><%= link_to article.member.name, member_path(article.member.id) %></p>
 
-<h2><a href ="/shop/show"><%= article.article_title %></a></h2>
-<p><%= article.article_content %></p>
-<p><%= article.user.display_name %></p>
 
 <% end %>

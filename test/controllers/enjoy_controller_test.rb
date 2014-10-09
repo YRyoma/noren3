@@ -11,13 +11,13 @@ class EnjoyControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get new" do
-    get :new
+  test "should get edit" do
+    get :edit
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit
+  test "should get new" do
+    get :new
     assert_response :success
   end
 
