@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'user_info/index'
+  get 'user_info/show'
+  get 'user_info/edit'
+  get 'user_info/new'
   get 'shop_index/index'
-
   get 'shop_index/show'
-
   get 'shop_index/new'
-
   get 'shop_index/edit'
 
   resources :eat
@@ -18,9 +19,11 @@ Rails.application.routes.draw do
   resources :about
   resources :home
   resources :shop_index
+  resources :user_info
 
 
 root 'home#index'
+
 
 
   get 'other/show'

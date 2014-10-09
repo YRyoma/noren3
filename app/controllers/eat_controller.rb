@@ -7,6 +7,7 @@ class EatController < ApplicationController
   def show
   	@article = Article.find(params[:id])
     render 'eat/show'
+
   end
 
   def new

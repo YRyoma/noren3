@@ -1,6 +1,6 @@
 class ColumController < ApplicationController
   def index
-  	@articles = Article.where(article_category: 'colum')
+  	@articles = Article.where(article_category: 'column')
     render 'colum/index'
   end
 
