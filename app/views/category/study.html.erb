@@ -1,0 +1,11 @@
+<h1>STUDY</h1>
+
+<% @articles.each do |article| %>
+
+<p><%= link_to article.title, study_path(article.id) %>
+   <%= link_to article.member.name, member_path(article.member.id) %>
+</p>
+
+
+
+<% end %>
