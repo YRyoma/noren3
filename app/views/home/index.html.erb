@@ -1,2 +1,48 @@
 <h1>Home#index</h1>
 
+<%# ここから下がShoyaが書きました %>
+
+<%# _header をここに記述します %>
+  <%#　toppage content below header %>
+  <div id="content">
+
+    <div id="top-image">
+      <%# image呼び出す %>
+    </div>
+
+    <div id="inner-content">
+
+      <div id="main" role="main">
+
+        <%# ”new” の記事の表示開始 ここから下をeach do で繰り返す %>
+        <article id="" role="article">
+
+          <header class="article-header">
+            <div class="one-title">
+              <div class="entry-thumbnail">
+                <a href="<%# 画像をクリックしたときのリンク%>"><img src="<%# 該当記事の画像を引っ張ってくるコード%>"></a>
+              </div>
+              <h1 class="h2 entry-title"><a href="<%# 記事タイトルのリンク %>" rel="bookmark" title="<%# タイトルに関係する属性を入れる必要あり%>" <%# 記事タイトルを呼び出す %></a></h1>
+            </div>
+          </header>
+          <div class="entry-content">
+
+            <p><a title="記事詳細へ" href="<%# 記事へのリンク %>"><%# 記事を100文字を呼び出す %>...</a></p>
+
+            <div class="entry-meta">
+              <span class="entry-category"><%# カテゴリーを呼び出す %></span>
+              <p class="byline vcard"><%# update_timeを呼び出す %></p>
+            </div>
+
+            <div class="entry-author">
+              <%# 個別メンバーのプロフィール写真、名前を呼び出す %>
+            </div>
+
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <%# _footerの呼び出し %>

@@ -2,3 +2,76 @@
 <h2><%= @member.name %></h2>
 
 <p><%= link_to 'メンバー一覧へ', '/member' %></p>
+
+<%# ここから下がShoyaが書きました %>
+
+<%# header をここに記述します %>
+  <%#　toppage content below header %>
+  <div id="content">
+
+    <div>
+      <%# if構文で制御できるようにする %>
+      <section id="" role="article">
+
+        <div class="member-image">
+          <a href="<%# 個別メンバーページのURLを呼び出す %>"><img src="<%# メンバーの写真を呼び出す %>"></a>
+        </div>
+
+        <div class="member-content">
+
+          <div class="member-name">
+            <h3><%# メンバーの名前を呼び出す %></h3>
+          </div>
+
+          <div class="member-discription" >
+            <p><%# メンバーの説明文章を呼び出す %></h3>
+          </div>
+
+          <div class="member-url">
+            <p><a href="<%# メンバーのURLを呼び出す %>"></a></p>
+          </div>
+
+          <div class="member-social">
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <div id="inner-content">
+
+      <div id="main" role="main">
+
+        <%# 個別メンバー の記事の表示開始 ここから下をeach do で繰り返す※以下の構造はindexと同じ %>
+        <article id="" role="article">
+
+          <header class="article-header">
+            <div class="one-title">
+              <div class="entry-thumbnail">
+                <a href="<%# 画像をクリックしたときのリンク%>"><img src="<%# 該当記事の画像を引っ張ってくるコード%>"></a>
+              </div>
+              <h1 class="h2 entry-title"><a href="<%# 記事タイトルのリンク %>" rel="bookmark" title="<%# タイトルに関係する属性を入れる必要あり%>" <%# 記事タイトルを呼び出す %></a></h1>
+            </div>
+          </header>
+
+          <div class="entry-content">
+
+            <p><a title="記事詳細へ" href="<%# 記事へのリンク %>"><%# 記事を100文字を呼び出す %>...</a></p>
+
+            <div class="entry-meta">
+              <span class="entry-category"><%# カテゴリーを呼び出す %></span>
+              <p class="byline vcard"><%# update_timeを呼び出す %></p>
+            </div>
+
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+

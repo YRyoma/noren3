@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Norenportland</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Noren Portland｜ポートランド</title>
+
+  <meta name="description" content="Norenではポートランドの情報を掲載しています。のれんをくぐると、新しい世界を見つけることがあるように、今まで発見できていなかった新しいポートランドを紹介したいと思っています。">
+  <meta name="keyword" content="ポートランド, Portland">
+
+  <%# 以下の3つはmobileについてです。 %>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="apple-touch-icon" href="<%# iPhone用のアイコン画像が入ります %>">
+  <link rel="icon" href="<%# ファビコンが入ります %>">
+
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-<h1><%= link_to 'Noren Portland', '/' %></h1>
 
-<ul>
- <li><%= link_to 'FOOD',  '/category/food' %></li>
- <li><%= link_to 'SHOP', '/category/shop' %></li>
- <li><%= link_to 'ENJOY', '/category/enjoy' %></li>
- <li><%= link_to 'STAY', '/category/stay' %></li>
- <li><%= link_to 'STUDY', '/category/study' %></li>
- <li><%= link_to 'MEET', '/category/meet' %></li>
-</ul>
-
-<ul>
-  <li><%= link_to 'ABOUT', '/about' %></li>
-  <li><%= link_to 'COLUMN', '/category/column' %></li>
-  <li><%= link_to 'GENERAL', '/category/general' %></li>
-  <li><%= link_to 'WRITERS', '/member' %></li>
-<ul>
-  
 <%= yield %>
 
 </body>

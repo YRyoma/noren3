@@ -4,3 +4,50 @@
 
 
 <% end %>
+
+<%# ここから下がshoyaが書きました。 %>
+
+<%# header をここに記述します %>
+  <%#　toppage content below header %>
+  <div id="content">
+
+    <div id="inner-content">
+
+      <div id="main" role="main">
+
+        <%# ”author” のメンバー情報の表示開始 ここから下をeach do で繰り返す %>
+        <%# if構文で制御できるようにする %>
+        <section id="" role="article">
+
+          <div class="member-image">
+            <a href="<%# 個別メンバーページのURLを呼び出す %>"><img src="<%# メンバーの写真を呼び出す %>"></a>
+          </div>
+
+          <div class="member-content">
+
+            <div class="member-name">
+              <h3><%# メンバーの名前を呼び出す %></h3>
+            </div>
+
+            <div class="member-discription" >
+              <p><%# メンバーの説明文章を呼び出す %></h3>
+            </div>
+
+            <div class="member-url">
+              <p><a href="<%# メンバーのURLを呼び出す %>"></a></p>
+            </div>
+
+            <div class="member-social">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </div>
