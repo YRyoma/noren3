@@ -21,7 +21,7 @@
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-                <img src= /assets/article/<%= article.photo.place %> width="307" height="179" href= <% column_path(article.id) %> ><%# 記事画像挿入、リンクがうまく動かない %>
+                <a href=  column_path(article.id)  ><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
               </div>
               <h1 class="h2 entry-title"><%= link_to article.title, column_path(article.id) %><%# 記事タイトルと、そののリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
             </div>
@@ -35,7 +35,7 @@
               <p class="byline vcard"><%# update_timeを呼び出す %></p>
             </div>
 
-            <div class="entry-author">
+            <div class="entry-author"><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
               <%# 個別メンバーのプロフィール写真、名前を呼び出す %>
             </div>
 

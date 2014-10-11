@@ -2,20 +2,20 @@
 
 one:
   name: MyText
-  login: MyText
-  pass: MyText
-  email: MyText
+  nicename: MyText
+  photo: MyText
+  description: MyText
   url1: MyText
   url2: MyText
-  photo_id: 1
-  description: MyText
+  login: MyText
+  pass: MyText
 
 two:
   name: MyText
-  login: MyText
-  pass: MyText
-  email: MyText
+  nicename: MyText
+  photo: MyText
+  description: MyText
   url1: MyText
   url2: MyText
-  photo_id: 1
-  description: MyText
+  login: MyText
+  pass: MyText

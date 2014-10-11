@@ -1,7 +1,6 @@
 
 <%# ここから下がShoyaが書きました %>
 
-
 <%# header をここに記述します %>
   <%#　toppage content below header %>
   <div id="content">
@@ -21,7 +20,7 @@
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-               <img src= /assets/article/<%= article.photo.place %> width="307" height="179" href= <% column_path(article.id) %> ><%# 記事画像挿入、リンクがうまく動かない %>
+               <a href= <%= column_path(article.id) %> ><img src= /assets/article/<%= article.photo %> width="307" height="179" ></a><%# 記事画像挿入、リンクがうまく動かない %>
               </div>
               <h1 class="h2 entry-title"> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> <%= link_to article.title, column_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
             </div>

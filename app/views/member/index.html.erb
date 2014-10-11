@@ -1,9 +1,3 @@
-<h1>Member#index</h1>
-<% @members.each do |member| %>
-<p><%= link_to member.name, member_path(member.id) %></p>
-
-
-<% end %>
 
 <%# ここから下がshoyaが書きました。 %>
 
@@ -15,26 +9,26 @@
 
       <div id="main" role="main">
 
-        <%# ”author” のメンバー情報の表示開始 ここから下をeach do で繰り返す %>
+        <% @members.each do |member| %><%# ”author” のメンバー情報の表示開始 ここから下をeach do で繰り返す %>
         <%# if構文で制御できるようにする %>
         <section id="" role="article">
 
           <div class="member-image">
-            <a href="<%# 個別メンバーページのURLを呼び出す %>"><img src="<%# メンバーの写真を呼び出す %>"></a>
+           <a href= <%= member_path(member.id) %> ><%# 個別メンバーページのURLを呼び出す %><img src= /assets/member/<%= member.photo %> width="200" height="200"><%# メンバーの写真を呼び出す %></a>
           </div>
 
           <div class="member-content">
 
             <div class="member-name">
-              <h3><%# メンバーの名前を呼び出す %></h3>
+              <h3><%= member.name %><%# メンバーの名前を呼び出す %></h3>
             </div>
 
             <div class="member-discription" >
-              <p><%# メンバーの説明文章を呼び出す %></h3>
+              <p><%= member.description %><%# メンバーの説明文章を呼び出す %></h3>
             </div>
 
             <div class="member-url">
-              <p><a href="<%# メンバーのURLを呼び出す %>"></a></p>
+              <p><a href= <%= member.url1 %> ></a></p>
             </div>
 
             <div class="member-social">
@@ -48,6 +42,7 @@
 
 
         </section>
+        <% end %>
       </div>
     </div>
   </div>
