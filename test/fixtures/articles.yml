@@ -1,15 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  content: MyText
   title: MyText
+  content: MyText
   tags: MyText
-  category: MyText
+  category_id: 1
   member_id: 1
+  photo_id: 1
 
 two:
-  content: MyText
   title: MyText
+  content: MyText
   tags: MyText
-  category: MyText
+  category_id: 1
   member_id: 1
+  photo_id: 1

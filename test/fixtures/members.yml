@@ -1,23 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  name: MyText
   login: MyText
   pass: MyText
-  nicename: MyText
   email: MyText
   url1: MyText
   url2: MyText
-  name: MyText
-  photo: MyText
+  photo_id: 1
   description: MyText
 
 two:
+  name: MyText
   login: MyText
   pass: MyText
-  nicename: MyText
   email: MyText
   url1: MyText
   url2: MyText
-  name: MyText
-  photo: MyText
+  photo_id: 1
   description: MyText
