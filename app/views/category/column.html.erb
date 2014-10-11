@@ -23,7 +23,7 @@
               <div class="entry-thumbnail">
                 <a href="<%# 画像をクリックしたときのリンク%>"><img src="<%# 該当記事の画像を引っ張ってくるコード%>"></a>
               </div>
-              <h1 class="h2 entry-title">" rel="bookmark" title="<%# タイトルに関係する属性を入れる必要あり%>" <%= link_to article.title, column_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
+              <h1 class="h2 entry-title"> rel="bookmark" title=<%# タイトルに関係する属性を入れる必要あり%>" <%= link_to article.title, column_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
             </div>
           </header>
           <div class="entry-content">
