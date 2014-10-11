@@ -21,14 +21,14 @@
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-                <a href="<%# 画像をクリックしたときのリンク%>"><img src="<%# 該当記事の画像を引っ張ってくるコード%>"></a>
+               <img src= /assets/article/<%= article.photo.place %> width="307" height="179" href= <% column_path(article.id) %> ><%# 記事画像挿入、リンクがうまく動かない %>
               </div>
-              <h1 class="h2 entry-title"> rel="bookmark" title=<%# タイトルに関係する属性を入れる必要あり%>" <%= link_to article.title, column_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
+              <h1 class="h2 entry-title"> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> <%= link_to article.title, column_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
             </div>
           </header>
           <div class="entry-content">
 
-            <p><%= link_to '記事詳細へ', column_path(article.id) %><%# 記事を50文字を呼び出す %></p>
+            <p><%= truncate(article.content, length: 50) %></br><%= link_to '記事詳細へ', column_path(article.id) %><%# 記事を50文字を呼び出す %></p>
 
             <div class="entry-meta">
               <span class="entry-category"></span>
