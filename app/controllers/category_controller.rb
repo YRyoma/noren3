@@ -1,6 +1,7 @@
 class CategoryController < ApplicationController
   def food
   	@articles = Article.where(category_id: '1')
+
   end
   def food_article
   	@article = Article.find(params[:id])

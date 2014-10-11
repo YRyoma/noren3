@@ -7,7 +7,6 @@
   <div id="content">
 
     <div class="category-title">
-      <%= @article.category.name %>
       <h1>COLUMN</h1>
 
     </div>
@@ -33,11 +32,11 @@
 
             <div class="entry-meta">
               <span class="entry-category"></span>
-              <p class="byline vcard"><%# update_timeを呼び出す %></p>
+              <p class="byline vcard"><%= article.created_at %><%# 記事の書かれた日付を記述 %></p>
             </div>
 
             <div class="entry-author">
-              <%# 個別メンバーのプロフィール写真、名前を呼び出す %>
+              <%= article.member.name %><%# 個別メンバーのプロフィール写真、名前を呼び出す %>
             </div>
          
  

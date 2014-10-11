@@ -34272,3 +34272,1159 @@ ActionView::Template::Error (undefined method `category' for nil:NilClass):
   Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:05:13 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `category' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2207887440'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.7ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:05:16 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `category' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2207887440'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+
+Started GET "/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+
+ActionController::RoutingError (No route matches [GET] "/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:05:20 -0700
+Processing by HomeController#index as */*
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:05:21 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `category' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2170792240'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.4ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:05:21 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `category' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2207887440'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:05:57 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2210280280'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.8ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:06:10 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `categoryname' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.categoryname %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2207739700'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.9ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:06:14 -0700
+Processing by CategoryController#column as HTML
+  Rendered category/column.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `category' for nil:NilClass):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @article.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2187295860'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:07:05 -0700
+Processing by CategoryController#column as HTML
+Completed 404 Not Found in 9ms
+
+ActiveRecord::RecordNotFound (Couldn't find Article without an ID):
+  app/controllers/category_controller.rb:47:in `column'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.8ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:07:29 -0700
+Processing by CategoryController#column as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7
+  Rendered category/column.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `category' for #<Article::ActiveRecord_Relation:0x000001012b97b8>):
+     7:   <div id="content">
+     8: 
+     9:     <div class="category-title">
+    10:       <%= @articles.category.name %>
+    11:       <h1>COLUMN</h1>
+    12: 
+    13:     </div>
+  app/views/category/column.html.erb:10:in `_app_views_category_column_html_erb___1758508228349449595_2157282560'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.6ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  Rendered category/column.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.6ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:08:03 -0700
+Processing by CategoryController#column as */*
+  [1m[35mArticle Load (1.0ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7
+  Rendered category/column.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/category/meet" for 127.0.0.1 at 2014-10-10 18:08:09 -0700
+Processing by CategoryController#meet as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 6[0m
+  Rendered category/meet.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:08:09 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.7ms)
+
+
+Started GET "/category/meet" for 127.0.0.1 at 2014-10-10 18:08:09 -0700
+Processing by CategoryController#meet as */*
+  [1m[35mArticle Load (1.1ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 6
+  Rendered category/meet.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/category/food" for 127.0.0.1 at 2014-10-10 18:08:10 -0700
+Processing by CategoryController#food as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 1[0m
+  Rendered category/food.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:08:11 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.1ms)
+
+
+Started GET "/category/food" for 127.0.0.1 at 2014-10-10 18:08:11 -0700
+Processing by CategoryController#food as */*
+  [1m[35mArticle Load (1.1ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 1
+  Rendered category/food.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:08:12 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  Rendered category/column.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:08:12 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.6ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:08:12 -0700
+Processing by CategoryController#column as */*
+  [1m[35mArticle Load (1.5ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7
+  Rendered category/column.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 89ms (Views: 86.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  Rendered category/column.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:09:27 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:09:28 -0700
+Processing by CategoryController#column as */*
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7
+  Rendered category/column.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 91ms (Views: 88.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 88ms (Views: 84.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.3ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:11:49 -0700
+Processing by CategoryController#column as */*
+  [1m[36mArticle Load (1.2ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 113ms (Views: 109.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:12:56 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.5ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:12:57 -0700
+Processing by CategoryController#column as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 109ms (Views: 98.9ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.5ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.5ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:19:37 -0700
+Processing by CategoryController#column as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.3ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:19:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/Users/Ryoma/GitHub/noren3/app/views/home/index.html.erb:51: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/Ryoma/GitHub/noren3/app/views/home/index.html.erb:53: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/home/index.html.erb:51: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/home/index.html.erb:53: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (1.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered home/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+
+Started GET "/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:20:41 -0700
+
+ActionController::RoutingError (No route matches [GET] "/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:20:42 -0700
+Processing by HomeController#index as */*
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+Processing by HomeController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/about.css?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/about.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+
+Started GET "/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:22:32 -0700
+
+ActionController::RoutingError (No route matches [GET] "/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 18:22:33 -0700
+Processing by HomeController#index as */*
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:22:47 -0700
+Processing by CategoryController#column as HTML
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.4ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.6ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/category/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:22:47 -0700
+
+ActionController::RoutingError (No route matches [GET] "/category/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.4ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.0ms)
+
+
+Started GET "/category/column" for 127.0.0.1 at 2014-10-10 18:22:47 -0700
+Processing by CategoryController#column as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1mSELECT "articles".* FROM "articles"  WHERE "articles"."category_id" = 7[0m
+  [1m[35mMember Load (0.5ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMember Load (0.4ms)[0m  SELECT  "members".* FROM "members"  WHERE "members"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered category/column.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-10 18:22:59 -0700
+Processing by AboutController#index as HTML
+  Rendered about/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:22:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-10-10 18:23:00 -0700
+Processing by AboutController#index as */*
+  Rendered about/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member" for 127.0.0.1 at 2014-10-10 18:23:01 -0700
+Processing by MemberController#index as HTML
+  [1m[36mMember Load (0.9ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  Rendered member/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/noren_logo.png" for 127.0.0.1 at 2014-10-10 18:23:01 -0700
+
+ActionController::RoutingError (No route matches [GET] "/noren_logo.png"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Ryoma/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/Ryoma/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.3ms)
+
+
+Started GET "/member" for 127.0.0.1 at 2014-10-10 18:23:01 -0700
+Processing by MemberController#index as */*
+  [1m[35mMember Load (0.5ms)[0m  SELECT "members".* FROM "members"
+  Rendered member/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.5ms)
