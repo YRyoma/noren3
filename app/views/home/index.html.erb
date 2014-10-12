@@ -21,9 +21,9 @@
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-                <a href=  ''  ><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
+                <a href= <%= article.url %>><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
               </div>
-              <h1 class="h2 entry-title"><a href= <%= article.url %>><%= article.title %></a><%# 記事タイトルと、そののリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
+              <h1 class="h2 entry-title"><a href= <%= article.url %>><%= article.title %></a><%# 記事タイトルと、そのリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
             </div>
           </header>
           <div class="entry-content">

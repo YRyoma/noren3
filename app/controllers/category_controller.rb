@@ -46,6 +46,7 @@ class CategoryController < ApplicationController
   end
   def column_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '7')
   end
 
   def general
