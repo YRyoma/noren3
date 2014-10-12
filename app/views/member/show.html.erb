@@ -44,30 +44,31 @@
 
       <div id="main" role="main">
 
-        <%# 個別メンバー の記事の表示開始 ここから下をeach do で繰り返す※以下の構造はindexと同じ %>
+        <% @articles.each do |articles| %><%# 個別メンバー の記事の表示開始 ここから下をeach do で繰り返す※以下の構造はindexと同じ %>
         <article id="" role="article">
 
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-                <a href= ""><img src= /assets/article/<%= @member.article.photo %> width="307" height="179"><%# 画像をクリックしたときのリンク%><%# 該当記事の画像を引っ張ってくるコード%></a>
+                <a href= <%= articles.url %>><img src= /assets/article/<%= articles.photo %> width="307" height="179"><%# 画像をクリックしたときのリンク%><%# 該当記事の画像を引っ張ってくるコード%></a>
               </div>
-              <h1 class="h2 entry-title"><%= link_to @member.article.title, '' %><%# タイトルに関係する属性を入れる必要あり%> <%# 記事タイトルを呼び出す %></a></h1>
+              <h1 class="h2 entry-title"><a href= <%= articles.url %>><%# タイトルに関係する属性を入れる必要あり%><%= articles.title %><%# 記事タイトルを呼び出す %></a></h1>
             </div>
           </header>
 
           <div class="entry-content">
 
-            <p><%= truncate(@member.article.content, length: 50) %></br><%= link_to "記事詳細へ", '' %></p>
+            <p><%= truncate(articles.content, length: 50) %></br><a href= <%= articles.url %>>記事詳細へ</a></p>
 
             <div class="entry-meta">
-              <span class="entry-category"><%= @member.article.category.name %><%# カテゴリーを呼び出す %></span>
-              <p class="byline vcard"><%= @member.article.created_at %><%# update_timeを呼び出す %></p>
+              <span class="entry-category"><%= articles.category.name %><%# カテゴリーを呼び出す %></span>
+              <p class="byline vcard"><%= articles.created_at %><%# update_timeを呼び出す %></p>
             </div>
 
           </div>
 
         </article>
+        <% end %>
       </div>
       
     </div>

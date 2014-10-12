@@ -5,17 +5,19 @@ one:
   nicename: MyText
   photo: MyText
   description: MyText
-  url1: MyText
-  url2: MyText
   login: MyText
   pass: MyText
+  url1: MyText
+  url2: MyText
+  email: MyText
 
 two:
   name: MyText
   nicename: MyText
   photo: MyText
   description: MyText
-  url1: MyText
-  url2: MyText
   login: MyText
   pass: MyText
+  url1: MyText
+  url2: MyText
+  email: MyText

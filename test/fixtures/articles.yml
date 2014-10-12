@@ -4,14 +4,16 @@ one:
   title: MyText
   content: MyText
   tags: MyText
+  photo: MyText
   member_id: 1
   category_id: 1
-  photo: MyText
+  url: MyText
 
 two:
   title: MyText
   content: MyText
   tags: MyText
+  photo: MyText
   member_id: 1
   category_id: 1
-  photo: MyText
+  url: MyText
