@@ -19,7 +19,7 @@
 
           </header>
 
-          <section class="single-content" itemprop="articleBody"><%= @article.content %></section>
+          <section class="single-content" itemprop="articleBody"><%= raw @article.content %></section>
 
           <footer class="article-footer"><%= @article.member.name %></br><%= @article.member.description %><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></footer>
 
