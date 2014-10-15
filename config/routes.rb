@@ -1,63 +1,35 @@
 Rails.application.routes.draw do
 
-  get 'stay/index'
-  get 'stay/show'
-  get 'stay/edit'
-  get 'stay/new'
 
-  get 'meet/index'
-  get 'meet/show'
-  get 'meet/edit'
-  get 'meet/new'
+  get 'category/food' => 'category#food'
+  get 'category/food_article/:id' => 'category#food_article', as: :food
 
-  get 'study/index'
-  get 'study/show'
-  get 'study/edit'
-  get 'study/new'
+  get 'category/shop' => 'category#shop'
+  get 'category/shop_article/:id' => 'category#shop_article', as: :shop
 
-  get 'food/index'
-  get 'food/show'
-  get 'food/edit'
-  get 'food/new'
+  get 'category/enjoy' => 'category#enjoy'
+  get 'category/enjoy_article/:id' => 'category#enjoy_article', as: :enjoy
+
+  get 'category/stay' => 'category#stay'
+  get 'category/stay_article/:id' => 'category#stay_article', as: :stay
+
+  get 'category/study' => 'category#study'
+  get 'category/study_article/:id' => 'category#study_article', as: :study
+
+  get 'category/meet' => 'category#meet'
+  get 'category/meet_article/:id' => 'category#meet_article', as: :meet
+
+  get 'category/column' => 'category#column'
+  get 'category/column_article/:id' => 'category#column_article', as: :column
+
+  get 'category/general' => 'category#general'
+  get 'category/general_article/:id' => 'category#general_article', as: :general
 
   resources :home
   resources :about
-  resources :column
-  resources :food
-  resources :enjoy
-  resources :general
   resources :member
-  resources :meet
-  resources :shop
-  resources :stay
-  resources :study
-
+  
   root 'home#index'
-
-  get 'about/index'
-  get 'about/show'
-  get 'about/edit'
-  get 'about/new'
-
-  get 'enjoy/index'
-  get 'enjoy/show'
-  get 'enjoy/edit'
-  get 'enjoy/new'
-
-  get 'shop/index'
-  get 'shop/show'
-  get 'shop/edit'
-  get 'shop/new'
-
-  get 'general/index'
-  get 'general/show'
-  get 'general/edit'
-  get 'general/new'
-
-  get 'column/index'
-  get 'column/show'
-  get 'column/edit'
-  get 'column/new'
 
   get 'member/index'
   get 'member/show'
