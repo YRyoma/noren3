@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	i = 1
-  	@articles = Article.all
+  	@articles = Article.all.order(created_at: :desc)
 
   end
 
