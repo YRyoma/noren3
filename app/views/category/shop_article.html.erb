@@ -1,0 +1,39 @@
+<%# ここから下がShoyaが書きました %>
+
+<%# headerを呼び出す %>
+  <div id="single-content">
+    <div id="inner-content">
+      <div id="single-main" role="main">
+        <article class="single-article" role="article">
+
+          <header class="article-header">
+
+            <div class="single-one-titile">
+              <h1 class="single-title" itemprop="headline"><%= @article.title %></h1>
+            </div>
+
+            <div id="single-info">
+              <botton><span class="single-category"><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></span></botton>
+              <p class="single-byline"><%= @article.created_at %><%# update_timeとauthor_nameを呼び出す %></p>
+            </div>
+
+          </header>
+
+          <section class="single-content" itemprop="articleBody"><%= raw @article.content %></section>
+
+          <footer class="article-footer"><%= @article.member.name %></br><%= @article.member.description %><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></footer>
+
+          <div class="related-artcile">
+            <%# 関連のある記事を呼び出す %>
+          </div>
+
+        </article>
+
+      </div>
+
+      <%# sidebarを呼び出す %>
+
+    </div>
+  </div>
+
+  <%# footerを呼び出す %>

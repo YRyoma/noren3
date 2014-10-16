@@ -1,7 +1,0 @@
-<h1>Meet#index</h1>
-<% @articles.each do |article| %>
-<p><%= link_to article.title, meet_path(article.id) %></p>
-<p><%= link_to article.member.name, member_path(article.member.id) %></p>
-
-
-<% end %>

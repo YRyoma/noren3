@@ -1,7 +1,46 @@
-<h1>Member#index</h1>
 
-<% @members.each do |member| %>
-<p><%= link_to member.name, member_path(member.id) %></p>
+<%# ここから下がshoyaが書きました。 %>
 
+<%# header をここに記述します %>
+  <%#　toppage content below header %>
+  <div id="content">
 
-<% end %>
+    <div id="inner-content">
+
+      <div id="main" role="main">
+
+        <% @members.each do |member| %><%# ”author” のメンバー情報の表示開始 ここから下をeach do で繰り返す %>
+        <%# if構文で制御できるようにする %>
+        <section id="" role="article">
+
+          <div class="member-image">
+           <a href= <%= member_path(member.id) %> ><%# 個別メンバーページのURLを呼び出す %><img src= /assets/member/<%= member.photo %> width="200" height="200"><%# メンバーの写真を呼び出す %></a>
+          </div>
+
+          <div class="member-content">
+
+            <div class="member-name">
+              <h3><a href= <%= member_path(member.id) %> ><%= member.name %><%# メンバーの名前を呼び出す %></a></h3>
+            </div>
+
+            <div class="member-discription" >
+              <p><%= member.description %><%# メンバーの説明文章を呼び出す %></h3>
+            </div>
+
+            <div class="member-url">
+              <p><a href= <%= member.url1 %> ></a></p>
+            </div>
+
+            <div class="member-social">
+              <ul>
+                <li></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+        <% end %>
+      </div>
+    </div>
+  </div>
