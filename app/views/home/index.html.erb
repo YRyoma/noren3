@@ -30,12 +30,12 @@
       	  	<div class="entry-meta">
 
               <div class="entry-member">
-                <a href=""><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
+                <a href="<%# 未実装 %>"><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
               <%# 個別メンバーのプロフィール写真、名前を呼び出す %><p><%= article.member.name %></p></a>
               </div>
 
               <div class="entry-category">
-                <p><%= article.category.name %></p>
+                <p><a href="<%# 未実装 %>"><%= article.category.name %></a></p>
               </div>
 
               <p class="byline vcard"><%= article.created_at %></p>

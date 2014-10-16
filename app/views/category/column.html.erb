@@ -30,11 +30,11 @@
             <div class="entry-meta">
 
               <div class="entry-member">
-                <a href=""><img src="/assets/member/<%= article.member.photo %>"><p><%= article.member.name %></p></a>
+                <a href="<%# 未実装 %>"><img src="/assets/member/<%= article.member.photo %>"><p><%= article.member.name %></p></a>
               </div>
 
               <div class="entry-category">
-                <p>FOOD</p>
+                <p><a href="<%# 未実装 %>"><%= article.category.name %></a></p>
               </div>
 
               <p class="byline vcard"><%= article.created_at %><%# 記事の書かれた日付を記述 %></p>

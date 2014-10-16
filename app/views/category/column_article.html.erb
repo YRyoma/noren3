@@ -35,7 +35,7 @@
               </div>
 
               <div class="member-content">
-                <h3><%= @article.member.name %></h3>
+                <h3><a href="<%= @article.member.url1 %>"><%= @article.member.name %></a></h3>
                 <p><%= @article.member.description %></p>
                 <p><a href="<%= @article.member.url1 %>"><%= @article.member.url1 %></a></p>
               </div>
@@ -47,7 +47,7 @@
 
           <div class="related-artcile">
             <% @articles.each do |articles| %>
-              
+
             <% end %>
             <%# 関連のある記事を呼び出す %>
           </div>
