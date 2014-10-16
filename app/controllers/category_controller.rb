@@ -4,6 +4,7 @@ class CategoryController < ApplicationController
   end
   def food_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '1').limit(5)
   end
 
   def shop
@@ -11,6 +12,7 @@ class CategoryController < ApplicationController
   end
   def shop_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '2').limit(5)
   end
 
   def enjoy
@@ -18,6 +20,7 @@ class CategoryController < ApplicationController
   end
   def enjoy_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '3').limit(5)
   end
 
   def stay
@@ -25,6 +28,7 @@ class CategoryController < ApplicationController
   end
   def stay_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '4').limit(5)
   end
 
   def study
@@ -32,6 +36,7 @@ class CategoryController < ApplicationController
   end
   def study_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '5').limit(5)
   end
 
   def meet
@@ -39,6 +44,7 @@ class CategoryController < ApplicationController
   end
   def meet_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '6').limit(5)
   end
 
   def column
@@ -46,7 +52,7 @@ class CategoryController < ApplicationController
   end
   def column_article
   	@article = Article.find(params[:id])
-    @articles = Article.where(category_id: '7')
+    @articles = Article.where(category_id: '7').order(created_at: :desc).limit(5)
   end
 
   def general
@@ -54,6 +60,7 @@ class CategoryController < ApplicationController
   end
   def general_article
   	@article = Article.find(params[:id])
+    @articles = Article.where(category_id: '8').order(created_at: :desc).limit(5)
   end
 
 end
