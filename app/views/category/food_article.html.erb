@@ -14,7 +14,7 @@
 
             <div id="single-info">
               <botton><span class="single-category"><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></span></botton>
-              <p class="single-byline"><%= @article.created_at %><%# update_timeとauthor_nameを呼び出す %></p>
+              <p class="single-byline"><%= @article.created_at.strftime("%x") %><%# update_timeとauthor_nameを呼び出す %></p>
             </div>
 
           </header>
