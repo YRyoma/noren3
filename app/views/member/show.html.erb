@@ -1,68 +1,54 @@
-
-<%# ここから下がShoyaが書きました %>
-
-<%# header をここに記述します %>
-  <%#　toppage content below header %>
-  <div id="content">
-
-    <div>
-      <%# if構文で制御できるようにする %>
-      <section id="" role="article">
-
-        <div class="member-image">
-          <img src=/assets/member/<%= @member.photo %> width="200" height="200">
-        </div>
-
-        <div class="member-content">
-
-          <div class="member-name">
-            <h3><%= @member.name %><%# メンバーの名前を呼び出す %></h3>
-          </div>
-
-          <div class="member-discription" >
-            <p><%= @member.description %><%# メンバーの説明文章を呼び出す %></h3>
-          </div>
-
-          <div class="member-url">
-            <p><%= @member.url1 %><%# メンバーのURLを呼び出す %></p>
-          </div>
-
-          <div class="member-social">
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <p><%= link_to 'メンバー一覧へ', '/member' %></p>
-
-        </div>
-
-      </section>
-
-    </div>
+   <div id="content">
 
     <div id="inner-content">
 
       <div id="main" role="main">
 
-        <% @articles.each do |articles| %><%# 個別メンバー の記事の表示開始 ここから下をeach do で繰り返す※以下の構造はindexと同じ %>
-        <article id="" role="article">
+        <div class="category-title">
+          <h2><%= @member.name %></h2>
+          <p>Stay hungry, stay foolish.</p>
+        </div>
+        <div id="member-introduction">
+            <div class="member-show-main">
+              <div class="member-img">
+                <img src=/assets/member/<%= @member.photo %> width="200" height="200">
+              </div>
+
+              <div class="member-content">
+                <h3><%= @member.name %><%# メンバーの名前を呼び出す %></h3>
+                <p><%= @member.description %><%# メンバーの説明文章を呼び出す %></p>
+                <p><a href="<%= @member.url1 %>"><%= @member.url1 %><%# メンバーのURLを呼び出す %></a></p>
+              </div>
+
+            </div>
+            </div>
+        <% @articles.each do |articles| %>
+        <article class="hentry" role="article">
 
           <header class="article-header">
             <div class="one-title">
               <div class="entry-thumbnail">
-                <a href= <%= articles.url %>><img src= /assets/article/<%= articles.photo %> width="307" height="179"><%# 画像をクリックしたときのリンク%><%# 該当記事の画像を引っ張ってくるコード%></a>
+                <a href="<%= articles.url %>"><img src= /assets/article/<%= articles.photo %> width="307" height="179"><%# 画像をクリックしたときのリンク%><%# 該当記事の画像を引っ張ってくるコード%></a>
               </div>
               <h1 class="h2 entry-title"><a href= <%= articles.url %>><%# タイトルに関係する属性を入れる必要あり%><%= articles.title %><%# 記事タイトルを呼び出す %></a></h1>
             </div>
           </header>
-
           <div class="entry-content">
 
-            <p><%= truncate(articles.content, length: 50) %></br><a href= <%= articles.url %>>記事詳細へ</a></p>
+            <p class="entry-text"><a title="記事詳細へ" href="<%= articles.url %>"><%= truncate(articles.content, length: 50) %></a></p>
 
             <div class="entry-meta">
-              <span class="entry-category"><%= articles.category.name %><%# カテゴリーを呼び出す %></span>
+
+              <div class="entry-member">
+                <a href=""><img src=/assets/member/<%= @member.photo %>><p><%= @member.name %></p></a>
+              </div>
+
+              <div class="entry-category">
+                <p><%= articles.category.name %><%# カテゴリーを呼び出す %></p>
+              </div>
+
               <p class="byline vcard"><%= articles.created_at %><%# update_timeを呼び出す %></p>
+
             </div>
 
           </div>
@@ -70,7 +56,5 @@
         </article>
         <% end %>
       </div>
-      
     </div>
   </div>
-

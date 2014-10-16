@@ -9,7 +9,6 @@
   <meta name="description" content="Norenではポートランドの情報を掲載しています。のれんをくぐると、新しい世界を見つけることがあるように、今まで発見できていなかった新しいポートランドを紹介したいと思っています。">
   <meta name="keyword" content="ポートランド, Portland">
 
-  <%# 以下の3つはmobileについてです。 %>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,72 +16,19 @@
   <link rel="apple-touch-icon" href="<%# iPhone用のアイコン画像が入ります %>">
   <link rel="icon" href="<%# ファビコンが入ります %>">
 
-
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
 <body>
-<header class="header" role="banner">
-
-    <div id="inner-header">
-
-      <div id="mini-nav" >
-        <ul>
-          <li><%= link_to 'ABOUT', '/about' %></li>
-          <li><%= link_to 'MEMBER', '/member' %></li>
-        </ul>
-      </div>
-
-      <div id="logo">
-        <%= link_to image_tag('noren_logo.png'), '/' %><%# ロゴ、ロゴに対してホームURL %>
-      </div>
-
-      <div id="search-bar">
-        <%# サーチバーの呼び出し方調べてほしい。。。 %>
-      </div>
-
-
-
-      <nav role="navigation">
-        <ul>
-          <li><%= link_to 'FOOD', '/category/food' %></li>
-          <li><%= link_to 'ENJOY', '/category/enjoy' %></li>
-          <li><%= link_to 'SHOP', '/category/shop' %></li>
-          <li>OTHER</li>
-            <ul>
-              <li><%= link_to 'STAY', '/category/stay' %></li>
-              <li><%= link_to 'STUDY', '/category/study' %></li>
-              <li><%= link_to 'MEET', '/category/meet' %></li>
-            </ul>
-          <li><%= link_to 'COLUMN', '/category/column' %></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
+  <%# headerパーシャルを呼び出す %>
+  <%#= render partial: 'header' %>
 
 <%= yield %>
 
-<footer class="footer" role="contentinfo">
-
-  <div>
-
-    <nav role="navigation">
-      <ul>
-        <li><%= link_to 'ABOUT', '/about' %></li>
-        <li><%= link_to 'MEMBER', '/member' %></li>
-      </ul>
-    </nav>
-
-    <p class="source-org copyright">&copy;  Noren Portland
-    </p>
-
-  </div>
-
-</footer>
+  <%# footerパーシャルを呼び出す %>
+  <%#= render partial: 'footer' %>
 
 </body>
 </html>

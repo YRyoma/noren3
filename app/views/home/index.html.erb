@@ -1,8 +1,3 @@
-
-<%# ここから下がShoyaが書きました %>
-
-<%# _header をここに記述します %>
-  <%#　toppage content below header %>
   <div id="content">
 
     <div id="top-image">
@@ -13,38 +8,49 @@
 
       <div id="main" role="main">
 
-        <% @articles.each do |article| %><%# ”new” の記事の表示開始 ここから下をeach do で繰り返す %>
-        
-        <article id="" role="article">
-        
+        <div class="article-sub-title">
+          <h2>NEW</h2>
+        </div>
 
-          <header class="article-header">
-            <div class="one-title">
-              <div class="entry-thumbnail">
-                <a href= <%= article.url %>><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
+      	<% @articles.each do |article| %><%# ”new” の記事の表示開始 ここから下をeach do で繰り返す %>
+      	<article class="hentry" role="article">
+
+      	  <header class="article-header">
+      	  	<div class="one-title">
+      	  	  <div class="entry-thumbnail">
+      	  	  	<a href= <%= article.url %>><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
+      	  	  </div>
+      	  	  <h1 class="h2 entry-title"><a href= <%= article.url %>><%= article.title %></a><%# 記事タイトルと、そのリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
+      	  	</div>
+      	  </header>
+      	  <div class="entry-content">
+
+      	  	<p class="entry-text"><a href= <%= article.url %>><%= truncate(article.content, length: 50) %></a><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
+
+      	  	<div class="entry-meta">
+
+              <div class="entry-member">
+                <a href=""><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
+              <%# 個別メンバーのプロフィール写真、名前を呼び出す %><p><%= article.member.name %></p></a>
               </div>
-              <h1 class="h2 entry-title"><a href= <%= article.url %>><%= article.title %></a><%# 記事タイトルと、そのリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
-            </div>
-          </header>
-          <div class="entry-content">
 
-            <p><%= truncate(article.content, length: 50) %></br><a href= <%= article.url %>>記事詳細へ</a><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
+              <div class="entry-category">
+                <p><%= article.category.name %></p>
+              </div>
 
-            <div class="entry-meta">
-              <span class="entry-category"><%= article.category.name %><%# カテゴリーを呼び出す %></span>
-              <p class="byline vcard"><%# update_timeを呼び出す %></p>
-            </div>
+              <p class="byline vcard"><%= article.created_at %></p>
 
-            <div class="entry-author"><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
-              <%# 個別メンバーのプロフィール写真、名前を呼び出す %>
             </div>
 
           </div>
-          
-        </article>
+
+      	</article>
         <% end %>
-        
-        
       </div>
     </div>
   </div>
+
+
+
+
+
