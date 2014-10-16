@@ -1,39 +1,36 @@
+  <div id="container">
+    <div id="main">
+    <header class="header" role="banner">
 
-  <header class="header" role="banner">
+      <div id="mini-nav" >
+        <ul>
+          <li><%= link_to 'ABOUT', '/about' %></li>
+          <li>｜</li>
+          <li><%= link_to 'MEMBER', '/member' %></li>
+        </ul>
+      </div>
 
-  	<div id="inner-header">
+      <div class="logo">
+        <h1 id="logo"><img src="noren_logo.png" alt="Noren Logo"></h1>
+      </div>
 
-  	  <div id="mini-nav" >
-  	  	<ul>
-  	  	  <li>About</li>
-  	  	  <li>Member</li>
-  	  	</ul>
-  	  </div>
+      <div id="search-bar">
+      </div>
 
-  	  <div id="logo">
-  	  	<img src="noren_logo.png" alt="Noren Logo">
-  	  </div>
-
-  	  <div id="search-bar">
-        <%# サーチバーの呼び出し方調べてほしい。。。 %>
-  	  </div>
-
-
-
-  	  <nav role="navigation">
-  	  	<ul>
-  	  	  <li><a href="<%# カテゴリーリンク %>">FOOD</a></li>
-  	  	  <li><a href="<%# カテゴリーリンク %>">ENJOY</a></li>
-  	  	  <li><a href="<%# カテゴリーリンク %>">SHOP<a></li>
-  	  	  <li>OTHER</li>
-            <ul>
-              <li><a href="<%# カテゴリーリンク %>">STAY</a></li>
-              <li><a href="<%# カテゴリーリンク %>">STUDY</a></li>
-              <li><a href="<%# カテゴリーリンク %>">MEET</a></li>
-            </ul>
-          <li><a href="<%# カテゴリーリンク %>">COLUMN</a></li>
-  	  	</ul>
-  	  </nav>
-
-  	</div>
+      <div id="inner-header">
+        <nav role="navigation">
+          <ul>
+            <li><%= link_to 'FOOD', '/category/food' %></li>
+            <li><%= link_to 'ENJOY', '/category/enjoy' %></li>
+            <li><%= link_to 'SHOP', '/category/shop' %></li>
+            <li>OTHER</li>
+              <ul>
+                <li><%= link_to 'STAY', '/category/stay' %></li>
+                <li><%= link_to 'STUDY', '/category/study' %></li>
+                <li><%= link_to 'MEET', '/category/meet' %></li>
+              </ul>
+            <li><%= link_to 'COLUMN', '/category/column' %></li>
+          </ul>
+        </nav>
+      </div>
   </header>

@@ -1,48 +1,188 @@
+   <div id="single-content">
+      <header class="single-article-header">
+        <div class="single-one-title">
+          <h1 class="single-title" itemprop="headline"><%= @article.title %></h1>
+        </div>
 
 
-<%# ここから下がShoyaが書きました %>
+            <div class="entry-meta">
 
-<%# headerを呼び出す %>
-  <div id="single-content">
-    <div id="inner-content">
-      <div id="single-main" role="main">
+              <div class="entry-category">
+                <p><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></p>
+              </div>
+
+              <p class="byline vcard"><%= @article.created_at %></p>
+
+              <div class="entry-member">
+                <a href=""><p>by <%= @article.member.name %></p></a>
+              </div>
+
+            </div>
+
+    </header>
+
+        <div id="single-main" role="main">
         <article class="single-article" role="article">
 
-          <header class="article-header">
+          <section class="article-content" itemprop="articleBody"><%= raw @article.content %>
+          </section>
 
-            <div class="single-one-titile">
-              <h1 class="single-title" itemprop="headline"><%= @article.title %></h1>
+          <footer class="article-footer">
+
+            <div class="member-main">
+              <div class="member-img">
+                <a href=""><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></a>
+              </div>
+
+              <div class="member-content">
+                <h3><%= @article.member.name %></h3>
+                <p><%= @article.member.description %></p>
+                <p><a href="<%= @article.member.url1 %>"><%= @article.member.url1 %></a></p>
+              </div>
+
             </div>
 
-            <div id="single-info">
-              <botton><span class="single-category"><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></span></botton>
-              <p class="single-byline"><%= @article.created_at %><%# update_timeとauthor_nameを呼び出す %></p>
-            </div>
 
-          </header>
-
-          <section class="single-content" itemprop="articleBody"><%= raw @article.content %></section>
-
-          <footer class="article-footer"><%= @article.member.name %></br><%= @article.member.description %><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></footer>
+          </footer>
 
           <div class="related-artcile">
             <% @articles.each do |articles| %>
-            <%= articles.title %>
+              <%= articles.title %>
             <% end %>
             <%# 関連のある記事を呼び出す %>
-            
           </div>
 
         </article>
 
       </div>
 
-      <%# sidebarを呼び出す %>
+  <div id="sidebar1" class="sidebar" role="complementary" >
 
-    </div>
+  <div id="sidebar-popular">
+    <h2 id="sidebar-title">POPULAR</h2>
+
+    <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img1.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img2.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img3.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
+      </div>
+
+    </article>
+
+    <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img1.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img2.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img3.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
+      </div>
+
+    </article>
+
+    <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img1.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img2.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
+      </div>
+
+    </article>
+
+        <article id="sidebar-article">
+      <div id="sidebar-image" >
+        <a href=""><img src="img3.png"></a>
+      </div>
+
+      <div id="sidebar-content">
+        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
+      </div>
+
+    </article>
+
+
   </div>
 
-  <%# footerを呼び出す %>
+</div>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+
+  <div>
+
+    <nav role="navigation">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <p class="source-org copyright">&copy; 2014 Noren Portland</p>
+
+  </div>
+
+  <%= render partial: 'sidebar' %>
 
 
 
