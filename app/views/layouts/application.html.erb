@@ -24,12 +24,12 @@
 
 <body>
   <%# headerパーシャルを呼び出す %>
-  <%#= render partial: 'header' %>
+  <%= render :partial => 'layouts/header' %>
 
 <%= yield %>
 
   <%# footerパーシャルを呼び出す %>
-  <%#= render partial: 'footer' %>
+  <%= render partial: 'layouts/footer' %>
 
 </body>
 </html>
