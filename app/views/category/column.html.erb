@@ -37,7 +37,7 @@
                 <p><a href="<%# 未実装 %>"><%= article.category.name %></a></p>
               </div>
 
-              <p class="byline vcard"><%= article.created_at %><%# 記事の書かれた日付を記述 %></p>
+              <p class="byline vcard"><%= article.created_at.strftime("%x") %><%# 記事の書かれた日付を記述 %></p>
 
             </div>
 

@@ -1,48 +1,48 @@
 class CategoryController < ApplicationController
   def food
-  	@articles = Article.where(category_id: '1')
+  	@articles = Article.where(category_id: '1').order(created_at: :desc)
   end
   def food_article
   	@article = Article.find(params[:id])
   end
 
   def shop
-  	@articles = Article.where(category_id: '2')
+  	@articles = Article.where(category_id: '2').order(created_at: :desc)
   end
   def shop_article
   	@article = Article.find(params[:id])
   end
 
   def enjoy
-  	@articles = Article.where(category_id: '3')
+  	@articles = Article.where(category_id: '3').order(created_at: :desc)
   end
   def enjoy_article
   	@article = Article.find(params[:id])
   end
 
   def stay
-  	@articles = Article.where(category_id: '4')
+  	@articles = Article.where(category_id: '4').order(created_at: :desc)
   end
   def stay_article
   	@article = Article.find(params[:id])
   end
 
   def study
-  	@articles = Article.where(category_id: '5')
+  	@articles = Article.where(category_id: '5').order(created_at: :desc)
   end
   def study_article
   	@article = Article.find(params[:id])
   end
 
   def meet
-  	@articles = Article.where(category_id: '6')
+  	@articles = Article.where(category_id: '6').order(created_at: :desc)
   end
   def meet_article
   	@article = Article.find(params[:id])
   end
 
   def column
-  	@articles = Article.where(category_id: '7')
+  	@articles = Article.where(category_id: '7').order(created_at: :desc)
   end
   def column_article
   	@article = Article.find(params[:id])
@@ -50,7 +50,7 @@ class CategoryController < ApplicationController
   end
 
   def general
-  	@articles = Article.where(category_id: '8')
+  	@articles = Article.where(category_id: '8').order(created_at: :desc)
   end
   def general_article
   	@article = Article.find(params[:id])

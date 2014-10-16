@@ -11,7 +11,7 @@
                 <p><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></p>
               </div>
 
-              <p class="byline vcard"><%= @article.created_at %></p>
+              <p class="byline vcard"><%= @article.created_at.strftime("%x") %></p>
 
               <div class="entry-member">
                 <a href=""><p>by <%= @article.member.name %></p></a>
