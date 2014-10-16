@@ -1,0 +1,4 @@
+user_info_path(user.id)
+
+ @user = User.find(params[:id])
+   #eat_controller
