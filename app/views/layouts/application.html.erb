@@ -20,7 +20,21 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
+
+  <!-- jQuery library (served from Google) -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="assets/jquery.bxslider.min.js" type="text/javascript"></script>
+  <!-- bxSlider CSS file -->
+  <link href="/assets/jquery.bxslider.css" rel="stylesheet" />
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+  </script>
+
+  </head>
 
 <body>
   <%# headerパーシャルを呼び出す %>
