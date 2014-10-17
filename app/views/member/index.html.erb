@@ -1,7 +1,29 @@
-<h1>Member#index</h1>
+   <div id="content">
 
-<% @members.each do |member| %>
-<p><%= link_to member.name, member_path(member.id) %></p>
+    <div id="inner-content">
+
+      <div id="main" role="main">
+
+        <div class="category-title">
+          <h2>MEMBER</h2>
+          <p>We love Portland!</p>
+        </div>
+
+        <% @members.each do |member| %><%# ”author” のメンバー情報の表示開始 ここから下をeach do で繰り返す %>
+        <%# if構文で制御できるようにする %>
+          <div id="member-introduction">
+            <div class="member-show-main">
+              <div class="member-img">
+                <a href= <%= member_path(member.id) %> ><%# 個別メンバーページのURLを呼び出す %><img src= /assets/member/<%= member.photo %> width="200" height="200"><%# メンバーの写真を呼び出す %></a>
+              </div>
+
+              <div class="member-content">
+                <h3><a href= "<%= member_path(member.id) %>" ><%= member.name %><%# メンバーの名前を呼び出す %></a></h3>
+                <p><%= member.description %><%# メンバーの説明文章を呼び出す %></p>
+                <p><a href="<%= member.url1 %> >"><%= member.url1 %></a></p>
+              </div>
+            </div>
+          </div>
+          <% end %>
 
 
-<% end %>

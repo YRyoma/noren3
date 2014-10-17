@@ -1,0 +1,22 @@
+<div id="sidebar1" class="sidebar" role="complementary" >
+  
+  <div id="sidebar-popular">
+  	<h2 id="sidebar-title">RELATED</h2>
+
+  	<% @articles.each do |article| %><%# 人気の記事を引っ張ってきて10記事ほど each do %>
+  	<article id="sidebar-article">
+  	  <div id="sidebar-image" >
+  	  	<a href="<%=article.url %>"><img src="/assets/article/<%=article.photo %>"> <%# 記事の画像を呼び出す %></a>
+  	  </div>
+
+  	  <div id="sidebar-content">
+  	    <h3><a href="<%=article.url %>"><%= article.title %><%# 記事タイトルを呼び出す %></a></h3>
+  	  </div>
+
+  	</article>
+    <% end %>
+
+
+  </div>
+
+</div>

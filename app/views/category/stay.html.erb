@@ -1,0 +1,47 @@
+<%# ここから下がShoyaが書きました %>
+
+<%# header をここに記述します %>
+  <%#　toppage content below header %>
+  <div id="content">
+
+    <div class="category-title">
+      <h1>STAY</h1>
+
+    </div>
+
+    <div id="inner-content">
+    <% @articles.each do |article| %><%# each do はじまり%>
+      <div id="main" role="main">
+
+        
+        <article id="" role="article">
+
+          <header class="article-header">
+            <div class="one-title">
+              <div class="entry-thumbnail">
+               <a href= <%= stay_path(article.id) %> ><img src= /assets/article/<%= article.photo %> width="307" height="179" ></a><%# 記事画像挿入、リンクがうまく動かない %>
+              </div>
+              <h1 class="h2 entry-title"> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> <%= link_to article.title, stay_path(article.id) %><%# 記事のタイトルとリンクを作成%></h1>
+            </div>
+          </header>
+          <div class="entry-content">
+
+            <p><%= truncate(article.content, length: 50) %></br><%= link_to '記事詳細へ', stay_path(article.id) %><%# 記事を50文字を呼び出す %></p>
+
+            <div class="entry-meta">
+              <span class="entry-category"></span>
+              <p class="byline vcard"><%= article.created_at.strftime("%x") %><%# 記事の書かれた日付を記述 %></p>
+            </div>
+
+            <div class="entry-author">
+              <%= article.member.name %><%# 個別メンバーのプロフィール写真、名前を呼び出す %>
+            </div>
+         
+ 
+          </div>
+             
+        </article>
+      </div>
+      <% end %>
+    </div>
+  </div>

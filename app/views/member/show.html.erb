@@ -1,4 +1,60 @@
-<h2><%= @member.name %></h2>
+   <div id="content">
 
-<p><%= link_to 'メンバー一覧へ', '/member' %></p>
+    <div id="inner-content">
 
+      <div id="main" role="main">
+
+        <div class="category-title">
+          <h2><%= @member.name %></h2>
+          <p>Stay hungry, stay foolish.</p>
+        </div>
+        <div id="member-introduction">
+            <div class="member-show-main">
+              <div class="member-img">
+                <img src=/assets/member/<%= @member.photo %> width="200" height="200">
+              </div>
+
+              <div class="member-content">
+                <h3><%= @member.name %><%# メンバーの名前を呼び出す %></h3>
+                <p><%= @member.description %><%# メンバーの説明文章を呼び出す %></p>
+                <p><a href="<%= @member.url1 %>"><%= @member.url1 %><%# メンバーのURLを呼び出す %></a></p>
+              </div>
+
+            </div>
+            </div>
+        <% @articles.each do |articles| %>
+        <article class="hentry" role="article">
+
+          <header class="article-header">
+            <div class="one-title">
+              <div class="entry-thumbnail">
+                <a href="<%= articles.url %>"><img src= /assets/article/<%= articles.photo %> width="307" height="179"><%# 画像をクリックしたときのリンク%><%# 該当記事の画像を引っ張ってくるコード%></a>
+              </div>
+              <h1 class="h2 entry-title"><a href= <%= articles.url %>><%# タイトルに関係する属性を入れる必要あり%><%= articles.title %><%# 記事タイトルを呼び出す %></a></h1>
+            </div>
+          </header>
+          <div class="entry-content">
+
+            <p class="entry-text"><a title="記事詳細へ" href="<%= articles.url %>"><%= truncate(articles.content, length: 50) %></a></p>
+
+            <div class="entry-meta">
+
+              <div class="entry-member">
+                <a href="<%# 未実装 %>"><img src=/assets/member/<%= @member.photo %>><p><%= @member.name %></p></a>
+              </div>
+
+              <div class="entry-category">
+                <p><a href="<%# 未実装 %>"><%= articles.category.name %><%# カテゴリーを呼び出す %></a></p>
+              </div>
+
+              <p class="byline vcard"><%= articles.created_at.strftime("%x") %><%# update_timeを呼び出す %></p>
+
+            </div>
+
+          </div>
+
+        </article>
+        <% end %>
+      </div>
+    </div>
+  </div>

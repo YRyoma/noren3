@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Norenportland</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Noren Portland｜ポートランド</title>
+
+  <meta name="description" content="Norenではポートランドの情報を掲載しています。のれんをくぐると、新しい世界を見つけることがあるように、今まで発見できていなかった新しいポートランドを紹介したいと思っています。">
+  <meta name="keyword" content="ポートランド, Portland">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="apple-touch-icon" href="/assets/favicon32.ico">
+  <link rel="icon" href="/assets/favicon.ico">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
+
+  <!-- jQuery library (served from Google) -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="assets/jquery.bxslider.min.js" type="text/javascript"></script>
+  <!-- bxSlider CSS file -->
+  <link href="/assets/jquery.bxslider.css" rel="stylesheet" />
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+  </script>
+
+  </head>
+
 <body>
-<h1><%= link_to 'Noren Portland', '/home' %></h1>
-<ul>
- <li><%= link_to 'FOOD', '/food' %></li>
- <li><%= link_to 'SHOP', '/shop' %></li>
- <li><%= link_to 'ENJOY', '/enjoy' %></li>
- <li><%= link_to 'STAY', '/stay' %></li>
- <li><%= link_to 'STUDY', '/study' %></li>
- <li><%= link_to 'MEET', '/meet' %></li>
- 
-</ul>
-
-<ul>
-  <li><%= link_to 'ABOUT', '/about' %></li>
-  <li><%= link_to 'COLUM', '/column' %></li>
-  <li><%= link_to 'GENERAL', '/general' %></li>
-  <li><%= link_to 'WRITERS', '/member' %></li>
-
-<ul>
-  
-
+  <%# headerパーシャルを呼び出す %>
+  <%= render :partial => 'layouts/header' %>
 
 <%= yield %>
+
+  <%# footerパーシャルを呼び出す %>
+  <%= render partial: 'layouts/footer' %>
 
 </body>
 </html>
