@@ -40,14 +40,14 @@
             <div class="entry-meta">
 
               <div class="entry-member">
-                <a href=""><img src=/assets/member/<%= @member.photo %>><p><%= @member.name %></p></a>
+                <a href="<%# 未実装 %>"><img src=/assets/member/<%= @member.photo %>><p><%= @member.name %></p></a>
               </div>
 
               <div class="entry-category">
-                <p><%= articles.category.name %><%# カテゴリーを呼び出す %></p>
+                <p><a href="<%# 未実装 %>"><%= articles.category.name %><%# カテゴリーを呼び出す %></a></p>
               </div>
 
-              <p class="byline vcard"><%= articles.created_at %><%# update_timeを呼び出す %></p>
+              <p class="byline vcard"><%= articles.created_at.strftime("%x") %><%# update_timeを呼び出す %></p>
 
             </div>
 

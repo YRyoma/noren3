@@ -1,7 +1,15 @@
   <div id="content">
 
     <div id="top-image">
+    
       <%# image呼び出す %>
+      <ul class="bxslider">
+      <% @articles_photo.each do |article| %>
+        <li><img src="/assets/article/<%= article.photo %>" ></li>
+        <% end %>
+      </ul>
+      
+
     </div>
 
     <div id="inner-content">
@@ -18,27 +26,27 @@
       	  <header class="article-header">
       	  	<div class="one-title">
       	  	  <div class="entry-thumbnail">
-      	  	  	<a href= <%= article.url %>><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
+      	  	  	<a href= "<%= article.url %>"><img src= /assets/article/<%= article.photo %> width="307" height="179"></a> <%# 記事画像挿入、リンクがうまく動かない %>
       	  	  </div>
-      	  	  <h1 class="h2 entry-title"><a href= <%= article.url %>><%= article.title %></a><%# 記事タイトルと、そのリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
+      	  	  <h1 class="h2 entry-title"><a href= "<%= article.url %>"><%= article.title %></a><%# 記事タイトルと、そのリンク %> <%# ここ不明！タイトルに関係する属性を入れる必要あり%> </h1>
       	  	</div>
       	  </header>
       	  <div class="entry-content">
 
-      	  	<p class="entry-text"><a href= <%= article.url %>><%= truncate(article.content, length: 50) %></a><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
+      	  	<p class="entry-text"><a href= "<%= article.url %>"><%= truncate(article.content, length: 50) %></a><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
 
       	  	<div class="entry-meta">
 
               <div class="entry-member">
-                <a href=""><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
+                <a href="<%# 未実装 %>"><img src= /assets/member/<%= article.member.photo %> width="32" height="32">
               <%# 個別メンバーのプロフィール写真、名前を呼び出す %><p><%= article.member.name %></p></a>
               </div>
 
               <div class="entry-category">
-                <p><%= article.category.name %></p>
+                <p><a href="<%# 未実装 %>"><%= article.category.name %></a></p>
               </div>
 
-              <p class="byline vcard"><%= article.created_at %></p>
+              <p class="byline vcard"><%= article.created_at.strftime("%x") %></p>
 
             </div>
 
