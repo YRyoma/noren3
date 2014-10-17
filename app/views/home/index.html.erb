@@ -1,13 +1,14 @@
   <div id="content">
 
     <div id="top-image">
+    
       <%# image呼び出す %>
       <ul class="bxslider">
-        <li><img src="/assets/img1.png" /></li>
-        <li><img src="/assets/img2.png" /></li>
-        <li><img src="<%# 新着記事の画像を呼び出す %>" /></li>
-        <li><img src="<%# 新着記事の画像を呼び出す %>" /></li>
+      <% @articles_photo.each do |article| %>
+        <li><img src="/assets/article/<%= article.photo %>" ></li>
+        <% end %>
       </ul>
+      
 
     </div>
 
