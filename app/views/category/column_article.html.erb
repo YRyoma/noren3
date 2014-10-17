@@ -11,7 +11,7 @@
                 <p><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></p>
               </div>
 
-              <p class="byline vcard"><%= @article.created_at %></p>
+              <p class="byline vcard"><%= @article.created_at.strftime("%x") %></p>
 
               <div class="entry-member">
                 <a href=""><p>by <%= @article.member.name %></p></a>
@@ -31,11 +31,11 @@
 
             <div class="member-main">
               <div class="member-img">
-                <a href=""><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></a>
+                <a href= ""><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></a>
               </div>
 
               <div class="member-content">
-                <h3><%= @article.member.name %></h3>
+                <h3><a href=""><%= @article.member.name %></a></h3>
                 <p><%= @article.member.description %></p>
                 <p><a href="<%= @article.member.url1 %>"><%= @article.member.url1 %></a></p>
               </div>
@@ -47,7 +47,7 @@
 
           <div class="related-artcile">
             <% @articles.each do |articles| %>
-              <%= articles.title %>
+
             <% end %>
             <%# 関連のある記事を呼び出す %>
           </div>
@@ -56,133 +56,14 @@
 
       </div>
 
-  <div id="sidebar1" class="sidebar" role="complementary" >
-
-  <div id="sidebar-popular">
-    <h2 id="sidebar-title">POPULAR</h2>
-
-    <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img1.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img2.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img3.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
-      </div>
-
-    </article>
-
-    <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img1.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img2.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img3.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
-      </div>
-
-    </article>
-
-    <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img1.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img2.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り</a></h3>
-      </div>
-
-    </article>
-
-        <article id="sidebar-article">
-      <div id="sidebar-image" >
-        <a href=""><img src="img3.png"></a>
-      </div>
-
-      <div id="sidebar-content">
-        <h3><a href="">第3回 ポートランドと僕、カフェ巡り　時々ビール</a></h3>
-      </div>
-
-    </article>
-
-
   </div>
 
 </div>
 
-  </div>
+</div>
 
-  <footer class="footer" role="contentinfo">
 
-  <div>
-
-    <nav role="navigation">
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-
-    <p class="source-org copyright">&copy; 2014 Noren Portland</p>
-
-  </div>
-
-  <%#= render partial: 'sidebar' %>
+  <%= render partial: 'layouts/sidebar' %>
 
 
 

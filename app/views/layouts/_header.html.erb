@@ -4,14 +4,14 @@
 
       <div id="mini-nav" >
         <ul>
-          <li><%= link_to 'ABOUT', '/about' %></li>
+          <li><%= link_to 'About', '/about' %></li>
           <li>｜</li>
-          <li><%= link_to 'MEMBER', '/member' %></li>
+          <li><%= link_to 'Member', '/member' %></li>
         </ul>
       </div>
 
       <div class="logo">
-        <h1 id="logo"><img src="noren_logo.png" alt="Noren Logo"></h1>
+        <h1 id="logo"><a href= "/"><img src="/assets/noren_logo.png" alt="Noren Logo"></a></h1>
       </div>
 
       <div id="search-bar">
@@ -19,16 +19,17 @@
 
       <div id="inner-header">
         <nav role="navigation">
-          <ul>
+          <ul id="menu-header-menu" class="nav top-nav">
             <li><%= link_to 'FOOD', '/category/food' %></li>
             <li><%= link_to 'ENJOY', '/category/enjoy' %></li>
             <li><%= link_to 'SHOP', '/category/shop' %></li>
-            <li>OTHER</li>
+            <% if false %> <li>OTHER</li>
               <ul>
                 <li><%= link_to 'STAY', '/category/stay' %></li>
                 <li><%= link_to 'STUDY', '/category/study' %></li>
                 <li><%= link_to 'MEET', '/category/meet' %></li>
               </ul>
+              <% end %>
             <li><%= link_to 'COLUMN', '/category/column' %></li>
           </ul>
         </nav>
