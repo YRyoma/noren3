@@ -1,30 +1,54 @@
+   <div id="single-content">
+      <header class="single-article-header">
+        <div class="single-one-title">
+          <h1 class="single-title" itemprop="headline"><%= @article.title %></h1>
+        </div>
 
-<%# ここから下がShoyaが書きました %>
 
-<%# headerを呼び出す %>
-  <div id="single-content">
-    <div id="inner-content">
-      <div id="single-main" role="main">
+            <div class="entry-meta">
+
+              <div class="entry-category">
+                <p><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></p>
+              </div>
+
+              <p class="byline vcard"><%= @article.created_at.strftime("%x") %></p>
+
+              <div class="entry-member">
+                <a href=""><p>by <%= @article.member.name %></p></a>
+              </div>
+
+            </div>
+
+    </header>
+
+        <div id="single-main" role="main">
         <article class="single-article" role="article">
 
-          <header class="article-header">
+          <section class="article-content" itemprop="articleBody"><%= raw @article.content %>
+          </section>
 
-            <div class="single-one-titile">
-              <h1 class="single-title" itemprop="headline"><%= @article.title %></h1>
+          <footer class="article-footer">
+
+            <div class="member-main">
+              <div class="member-img">
+                <a href= ""><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></a>
+              </div>
+
+              <div class="member-content">
+                <h3><a href=""><%= @article.member.name %></a></h3>
+                <p><%= @article.member.description %></p>
+                <p><a href="<%= @article.member.url1 %>"><%= @article.member.url1 %></a></p>
+              </div>
+
             </div>
 
-            <div id="single-info">
-              <botton><span class="single-category"><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></span></botton>
-              <p class="single-byline"><%= @article.created_at.strftime("%x") %><%# update_timeとauthor_nameを呼び出す %></p>
-            </div>
 
-          </header>
-
-          <section class="single-content" itemprop="articleBody"><%= raw @article.content %></section>
-
-          <footer class="article-footer"><%= @article.member.name %></br><%= @article.member.description %><img src= /assets/member/<%= @article.member.photo %> width='32' length='32'></footer>
+          </footer>
 
           <div class="related-artcile">
+            <% @articles.each do |articles| %>
+
+            <% end %>
             <%# 関連のある記事を呼び出す %>
           </div>
 
@@ -32,9 +56,14 @@
 
       </div>
 
-      <%# sidebarを呼び出す %>
-
-    </div>
   </div>
 
-  <%# footerを呼び出す %>
+</div>
+
+</div>
+
+
+  <%= render partial: 'layouts/sidebar' %>
+
+
+
