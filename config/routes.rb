@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   resources :home
   resources :about
   resources :member
-  
+
   root 'home#index'
 
   get 'member/index'
