@@ -1,33 +1,13 @@
 Rails.application.routes.draw do
 
+  get '/member' => 'member#index'
 
-  get 'category/food' => 'category#food'
-  get 'category/food_article/:id' => 'category#food_article', as: :food
-
-  get 'category/shop' => 'category#shop'
-  get 'category/shop_article/:id' => 'category#shop_article', as: :shop
-
-  get 'category/enjoy' => 'category#enjoy'
-  get 'category/enjoy_article/:id' => 'category#enjoy_article', as: :enjoy
-
-  get 'category/stay' => 'category#stay'
-  get 'category/stay_article/:id' => 'category#stay_article', as: :stay
-
-  get 'category/study' => 'category#study'
-  get 'category/study_article/:id' => 'category#study_article', as: :study
-
-  get 'category/meet' => 'category#meet'
-  get 'category/meet_article/:id' => 'category#meet_article', as: :meet
-
-  get 'category/column' => 'category#column'
-  get 'category/column_article/:id' => 'category#column_article', as: :column
-
-  get 'category/general' => 'category#general'
-  get 'category/general_article/:id' => 'category#general_article', as: :general
 
   resources :home
   resources :about
   resources :member
+  resources :article
+  get ':id' => 'article#index'
 
   root 'home#index'
 

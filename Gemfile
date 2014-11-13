@@ -31,6 +31,14 @@ gem 'spring',        group: :development
 
 gem 'acts-as-taggable-on', '~> 3.4'
 
+group :development do
+  gem "better_errors"
+end
+
+group :production do
+  gem 'pg'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -14,11 +14,11 @@
           <div id="member-introduction">
             <div class="member-show-main">
               <div class="member-img">
-                <a href= <%= member_path(member.id) %> ><%# 個別メンバーページのURLを呼び出す %><img src= /assets/member/<%= member.photo %> width="200" height="200"><%# メンバーの写真を呼び出す %></a>
+                <a href= "member/<%= member.id %>" ><%# 個別メンバーページのURLを呼び出す %><img src= /assets/member/<%= member.photo %> width="200" height="200"><%# メンバーの写真を呼び出す %></a>
               </div>
 
               <div class="member-content">
-                <h3><a href= "<%= member_path(member.id) %>" ><%= member.name %><%# メンバーの名前を呼び出す %></a></h3>
+                <h3><a href= "member/<%= member.id %>" ><%= member.name %><%# メンバーの名前を呼び出す %></a></h3>
                 <p><%= member.description %><%# メンバーの説明文章を呼び出す %></p>
                 <p><a href="<%= member.url1 %> >"><%= member.url1 %></a></p>
               </div>
