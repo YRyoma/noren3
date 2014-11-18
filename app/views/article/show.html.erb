@@ -7,15 +7,15 @@
 
             <div class="entry-meta">
 
+              <div class="entry-member">
+                <a href="../member/<%= @article.member.id %>"><p><%= @article.member.name %></p></a>
+              </div>
+
               <div class="entry-category">
                 <p><%= @article.category.name %><%# 記事カテゴリーを呼び出す%></p>
               </div>
 
               <p class="byline vcard"><%= @article.created_at.strftime("%x") %></p>
-
-              <div class="entry-member">
-                <a href="../member/<%= @article.member.id %>"><p>by <%= @article.member.name %></p></a>
-              </div>
 
               <div id="facebook-button" class="social-button"><div class="fb-like" data-href="http://www.noren3.com/article/<%= @article.id %>" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></div>
 

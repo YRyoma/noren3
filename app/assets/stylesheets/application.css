@@ -1544,7 +1544,8 @@ SINGLE PAGE
 }
 .single-article-header .entry-member p {
   margin: 0;
-  color: #898687;
+  color: #907971;
+  font-weight: 600;
 }
 .single-article-header .entry-category p {
   color: #898687;
@@ -2405,7 +2406,7 @@ you can add resource intensive styles.
     font-size: 24px;
     color: #222222;
     font-family: 'Neuton', sans-serif;
-    padding-left: 8px;
+    padding-left: 4px;
   }
   .single-article-header .entry-meta {
     height: 32px;
@@ -2423,7 +2424,6 @@ you can add resource intensive styles.
   }
   .single-article-header .entry-member p {
     margin: 0;
-    color: #898687;
   }
   .single-article-header .entry-category p {
     color: #898687;
@@ -2472,7 +2472,7 @@ you can add resource intensive styles.
   }
   .member-main .member-content p {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
   }
 
