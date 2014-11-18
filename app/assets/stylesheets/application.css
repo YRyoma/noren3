@@ -951,6 +951,7 @@ SINGLE PAGE
   width: 100%;
 }
 #single-main .single-article .article-content p {
+  padding: 0 8px;
   line-height: 2.0;
   font-size: 14px;
 }
@@ -1830,6 +1831,7 @@ you can add resource intensive styles.
     width: 680px;
   }
   #single-main .single-article .article-content p {
+    padding: 0;
     line-height: 2.0;
     font-size: 14px;
   }
