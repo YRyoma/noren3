@@ -1,11 +1,8 @@
   <div id="content">
 
     <div id="top-image">
-
       <%# image呼び出す %>
-
-
-
+        <a href="article/<%= @article_photo.id %>"><img src="<%= asset_path "article/#{@article_photo.photo}" %>" ></a></li>
     </div>
 
     <div id="inner-content">
