@@ -35,7 +35,7 @@
           </header>
           <div class="entry-content">
 
-            <p class="entry-text"><%= truncate(article.content, length: 50) %><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
+            <p class="entry-text"><%= truncate(strip_tags(article.content), :length => 50) %><%# 記事詳細へのリンクと、50文字を呼び出す %></p>
 
             <div class="entry-meta">
 

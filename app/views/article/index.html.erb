@@ -25,7 +25,7 @@
           </header>
           <div class="entry-content">
 
-            <p class="entry-text"><%= truncate(article.content, length: 50) %></p>
+            <p class="entry-text"><%= truncate(strip_tags(article.content), :length => 50) %></p>
 
             <div class="entry-meta">
 
