@@ -2039,6 +2039,19 @@ you can add resource intensive styles.
     margin: 0 0 0 12px;
     float: left;
   }
+
+/*********************
+  ABOUT PAGE
+*********************/
+.single-culumn {
+  width: 740px;
+  margin: 60px auto;
+}
+.single-culumn p {
+  line-height: 1.9;
+}
+
+
 }
 /*********************
 LARGE VIEWING SIZE
