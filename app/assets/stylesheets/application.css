@@ -1433,6 +1433,22 @@ SIDEBARS & ASIDES
   float: left;
 }
 
+  #single-main .single-article .article-content blockquote img {
+    width: 24px;
+  }
+
+  #single-main .single-article .article-content blockquote img#place-img {
+    margin: 0 0 -5px 0;
+  }
+
+  #single-main .single-article .article-content blockquote img#time-img {
+    margin: 0 0 -6px 0;
+  }
+
+  #single-main .single-article .article-content blockquote img#web-img {
+    margin: 0 0 -7px 0;
+  }
+
 /*********************
 FOOTER STYLES
 *********************/
