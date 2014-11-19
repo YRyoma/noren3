@@ -1012,7 +1012,7 @@ SINGLE PAGE
   */
 }
 .entry-content p {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 .entry-content table {
   width: 100%;
@@ -1749,7 +1749,8 @@ you can add resource intensive styles.
     margin-right: auto;
   }
   .one-title .entry-title {
-    height: 30px;
+    height: 32px;
+    margin-bottom: 16px;
     font-size: 13px;
     font-weight: bold;
     clear: both;
