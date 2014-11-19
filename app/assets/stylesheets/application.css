@@ -1012,7 +1012,7 @@ SINGLE PAGE
   */
 }
 .entry-content p {
-  margin: 0 0 28px;
+  margin: 0 0 20px;
 }
 .entry-content table {
   width: 100%;
@@ -1720,7 +1720,7 @@ you can add resource intensive styles.
 
   .hentry {
     width: 319px;
-    height: 372px;
+    height: 390px;
     background: white;
     display: inline-block;
     margin: 30px 24px;
@@ -1749,6 +1749,7 @@ you can add resource intensive styles.
     margin-right: auto;
   }
   .one-title .entry-title {
+    height: 30px;
     font-size: 13px;
     font-weight: bold;
     clear: both;
