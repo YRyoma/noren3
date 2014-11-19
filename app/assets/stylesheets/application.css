@@ -711,7 +711,7 @@ HEADER STYLES
 #copy {
   color: #898687;
   clear: both;
-  margin: 0;
+  margin: 8px 0 2px;
 }
 
 /*********************
@@ -1573,6 +1573,10 @@ you can add resource intensive styles.
     font-size: 12px;
     display: inline-block;
     float: left;
+  }
+
+  .header #mini-nav ul {
+    margin: 0;
   }
   .header #mini-nav li {
     float: left;
