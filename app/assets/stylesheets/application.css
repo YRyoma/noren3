@@ -2009,6 +2009,14 @@ you can add resource intensive styles.
     background-color: #F7F7F7;
   }
 
+  #single-main .single-article .article-content blockquote h4 {
+    margin-top: 8px;
+  }
+
+  #single-main .single-article .article-content blockquote p {
+    margin: 8px 0;
+  }
+
   #single-main .single-article .article-content blockquote img {
     width: 24px;
   }
