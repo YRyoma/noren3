@@ -2011,6 +2011,7 @@ you can add resource intensive styles.
 
   #single-main .single-article .article-content blockquote h4 {
     margin-top: 8px;
+    margin-bottom: 12px;
   }
 
   #single-main .single-article .article-content blockquote p {
