@@ -708,6 +708,12 @@ HEADER STYLES
   color: white;
 }
 
+#copy {
+  color: #898687;
+  clear: both;
+  margin: 0;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -951,7 +957,7 @@ SINGLE PAGE
   width: 100%;
 }
 #single-main .single-article .article-content p {
-  line-height: 2.0;
+  line-height: 1.9;
   font-size: 14px;
 }
 #single-main .single-article .article-content img {
@@ -1573,7 +1579,7 @@ you can add resource intensive styles.
   }
 
   #logo {
-    height: 200px;
+    height: 188px;
     margin: 0 0 3px 0;
     text-align: center;
     border-bottom: 1px solid #d2d2d2;
@@ -1581,7 +1587,7 @@ you can add resource intensive styles.
   }
   #logo img {
     width: 240px;
-    margin: 12px 0 32px 0;
+    margin-bottom: 32px;
   }
 
   /*********************
@@ -1707,13 +1713,14 @@ you can add resource intensive styles.
     font-family: 'Neuton', sans-serif;
     text-align: left;
     border-bottom: 1px solid #d2d2d2;
-    margin: 70px 0 30px 0;
+    margin: 100px 0 30px 0;
+    padding-left: 8px;
     color: #907971;
   }
 
   .hentry {
     width: 319px;
-    height: 360px;
+    height: 372px;
     background: white;
     display: inline-block;
     margin: 30px 24px;
@@ -1730,7 +1737,7 @@ you can add resource intensive styles.
   .one-title .entry-thumbnail {
     width: 319px;
     /* 記事一覧のアイキャッチ画像の幅スマホ */
-    height: 179px;
+    height: 213px;
     float: left;
     margin: 0 0 16px 0;
   }
