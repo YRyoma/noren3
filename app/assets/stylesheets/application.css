@@ -554,6 +554,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+#container {
+  margin-bottom: 160px;
+}
+
 .social-button {
   margin: 4px 0 0 4px;
   display: inline-block;
@@ -1468,13 +1472,32 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
+  height: 180px;
   clear: both;
   color: #898687;
   text-align: center;
 }
 
+.footer img {
+  height: 40px;
+  width: 40px;
+  margin: 4px;
+}
+
 .footer p {
   margin: 0;
+  font-size: 12px;
+}
+
+.footer ul {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 60px;
+}
+
+.footer ul li {
+  display: inline-block;
+  text-align: center;
 }
 
 /*
