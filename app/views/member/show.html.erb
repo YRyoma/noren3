@@ -6,7 +6,7 @@
 
         <div class="category-title">
           <h2><%= @member.name %></h2>
-          <p>Stay hungry, stay foolish.</p>
+          <p><%= @member.nicename %></p>
         </div>
         <div id="member-introduction">
             <div class="member-show-main">
@@ -16,7 +16,7 @@
 
               <div class="member-content">
                 <h3><%= @member.name %><%# メンバーの名前を呼び出す %></h3>
-                <p><%= @member.description %><%# メンバーの説明文章を呼び出す %></p>
+                <p><%= raw @member.description %><%# メンバーの説明文章を呼び出す %></p>
                 <p><a href="<%= @member.url1 %>"><%= @member.url1 %><%# メンバーのURLを呼び出す %></a></p>
               </div>
 

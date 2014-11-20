@@ -49,7 +49,7 @@
 
               <div class="member-content">
                 <h3><a href= "../member/<%= @article.member.id %>"><%= @article.member.name %></a></h3>
-                <p><%= @article.member.description %></p>
+                <p><%= raw @article.member.description %></p>
                 <p><a href="<%= @article.member.url1 %>"><%= @article.member.url1 %></a></p>
               </div>
 
