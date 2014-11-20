@@ -1433,19 +1433,34 @@ SIDEBARS & ASIDES
   float: left;
 }
 
-  #single-main .single-article .article-content blockquote img {
+#single-main .single-article .article-content blockquote {
+  margin: 60px 0;
+  padding: 12px 20px;
+  background-color: #F7F7F7;
+}
+
+#single-main .single-article .article-content blockquote h4 {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+#single-main .single-article .article-content blockquote p {
+    margin: 8px 0;
+}
+
+#single-main .single-article .article-content blockquote img {
     width: 24px;
   }
 
-  #single-main .single-article .article-content blockquote img#place-img {
+#single-main .single-article .article-content blockquote img#place-img {
     margin: 0 0 -5px 0;
   }
 
-  #single-main .single-article .article-content blockquote img#time-img {
+#single-main .single-article .article-content blockquote img#time-img {
     margin: 0 0 -6px 0;
   }
 
-  #single-main .single-article .article-content blockquote img#web-img {
+#single-main .single-article .article-content blockquote img#web-img {
     margin: 0 0 -7px 0;
   }
 
@@ -2019,7 +2034,7 @@ you can add resource intensive styles.
     margin: 30px 17px;
   }
 
-  .article-content blockquote {
+  #single-main .single-article .article-content blockquote {
     margin: 60px 0;
     padding: 16px 40px;
     background-color: #F7F7F7;
