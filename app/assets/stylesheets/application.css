@@ -1473,6 +1473,10 @@ FOOTER STYLES
   text-align: center;
 }
 
+.footer p {
+  margin: 0;
+}
+
 /*
 if you checked out the link above:
 http://www.alistapart.com/articles/organizing-mobile/
