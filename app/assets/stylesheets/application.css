@@ -1591,6 +1591,10 @@ tweeners.
     display: none;
   }
 
+  #single-main .single-article .article-content p br {
+    display: none;
+  }
+
   .sidebar {
     margin-top: 60px;
   }
