@@ -1537,6 +1537,10 @@ tweeners.
   .header #mini-nav ul {
     display: none;
   }
+
+  .social-button {
+    display: none;
+  }
 }
 
 
