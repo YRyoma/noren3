@@ -1144,6 +1144,40 @@ MEMBER
   margin: 0;
 }
 
+
+#article-member-introduction {
+  width: 100%;
+  text-align: center;
+}
+#article-member-introduction .member-show-main {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+}
+#article-member-introduction .member-show-main .member-img img {
+  height: 200px;
+  width: 200px;
+  margin: 14px 30px 0 30px;
+}
+#article-member-introduction .member-show-main .member-content {
+  height: 100%;
+  padding: 14px 0 0 0;
+  width: auto;
+}
+#article-member-introduction .member-show-main .member-content h3 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+#article-member-introduction .member-show-main .member-content p {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  float: left;
+}
+
+
+
 #member-introduction {
   width: 100%;
   text-align: center;
@@ -1999,6 +2033,38 @@ you can add resource intensive styles.
   .member-main .member-content p {
     width: 100%;
     font-size: 12px;
+    margin: 0;
+  }
+
+
+  #article-member-introduction {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    text-align: left;
+    display: inline-block;
+  }
+  #article-member-introduction .member-show-main {
+    margin: 0;
+    display: block;
+    clear: both;
+  }
+  #article-member-introduction .member-show-main .member-img img {
+    height: 128px;
+    width: 128px;
+    float: left;
+    margin: 14px 20px 14px 14px;
+  }
+  #article-member-introduction .member-show-main .member-content {
+    height: 100%;
+    padding: 14px 0 0 0;
+    width: auto;
+  }
+  #article-member-introduction .member-show-main .member-content h3 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  #article-member-introduction .member-show-main .member-content p {
+    font-size: 14px;
     margin: 0;
   }
 
