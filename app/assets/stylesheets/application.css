@@ -1591,6 +1591,10 @@ tweeners.
     display: none;
   }
 
+  .sidebar {
+    margin-top: 60px;
+  }
+
   .sidebar #sidebar-popular #sidebar-article #sidebar-image img {
     width: 42%;
   }
@@ -2102,9 +2106,6 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  .sidebar {
-    margin-top: 60px;
-  }
 
   .sidebar #sidebar-popular h2 {
     margin: 20px 0;
