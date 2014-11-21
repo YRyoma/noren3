@@ -1514,8 +1514,8 @@ FOOTER STYLES
 }
 
 .footer img {
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   margin: 4px;
 }
 
@@ -2272,6 +2272,12 @@ you can add resource intensive styles.
     margin: 0 0 0 12px;
     float: left;
   }
+
+  .footer img {
+  height: 40px;
+  width: 40px;
+  margin: 4px;
+}
 
 /*********************
   ABOUT PAGE
