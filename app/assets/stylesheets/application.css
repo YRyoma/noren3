@@ -1538,8 +1538,29 @@ tweeners.
     display: none;
   }
 
+  .single-article-header {
+    margin: 48px 0 24px;
+  }
+
   .social-button {
     display: none;
+  }
+
+  .sidebar #sidebar-popular #sidebar-article #sidebar-image img {
+    width: 42%;
+  }
+
+  .sidebar #sidebar-popular #sidebar-article #sidebar-content h3 {
+    width: 45%;
+  }
+
+  .member-main .member-img {
+    height: 100%;
+  }
+
+  .category-title h2 {
+    font-size: 24px;
+    font-weight: 400;
   }
 }
 
