@@ -1492,7 +1492,6 @@ FOOTER STYLES
 
 .footer ul {
   margin: 0;
-  margin-bottom: 24px;
 }
 
 .footer ul li {
@@ -1501,6 +1500,7 @@ FOOTER STYLES
 }
 .footer-social-icon {
   padding-top: 60px;
+  margin-bottom: 0;
 }
 
 .footer-nav {
@@ -2075,6 +2075,7 @@ you can add resource intensive styles.
   mobile. Make sure to double check these!
   */
 .footer-social-icon {
+  margin-bottom: 24px;
   padding-top: 80px;
 }
 
