@@ -1158,7 +1158,7 @@ MEMBER
 #member-introduction .member-show-main .member-img img {
   height: 200px;
   width: 200px;
-  margin: 14px 30px 14px 30px;
+  margin: 14px 30px 0 30px;
 }
 #member-introduction .member-show-main .member-content {
   height: 100%;
