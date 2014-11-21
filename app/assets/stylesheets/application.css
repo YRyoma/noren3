@@ -1115,7 +1115,6 @@ SINGLE PAGE
 MEMBER
 *********************/
 .member-main {
-  height: 172px;
   width: 100%;
   margin: 60px 0 60px 0;
   display: inline-block;
@@ -1518,7 +1517,21 @@ tweeners.
 
 
 @media only screen and (max-width: 481px) {
+  #container {
+    width: 95%;
+    margin: auto;
+  }
+  .header {
+    text-align: center;
+  }
+  #copy {
+    font-size: 10px;
+    margin: 8px 0 4px;
+  }
   #top-image {
+    display: none;
+  }
+  .header #mini-nav ul {
     display: none;
   }
 }
@@ -1925,7 +1938,6 @@ you can add resource intensive styles.
   MEMBER
   *********************/
   .member-main {
-    height: 158px;
     width: 100%;
     margin: 60px 0 60px 0;
     display: inline-block;
