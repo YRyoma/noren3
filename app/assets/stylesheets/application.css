@@ -681,7 +681,6 @@ h4, .h4 {
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -1516,6 +1515,16 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 *********************/
+
+
+@media only screen and (max-width: 481px) {
+  #top-image {
+    display: none;
+  }
+}
+
+
+
 @media only screen and (min-width: 481px) {
   /*
   IMPORTANT NOTE ABOUT SASS 3.3 & UP
@@ -2025,6 +2034,7 @@ you can add resource intensive styles.
 
   /* end .footer-links */
 }
+
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
