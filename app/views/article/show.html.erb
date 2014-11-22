@@ -28,7 +28,7 @@
               </div>
 
               <div id="twitter-button" class="social-button">
-                <a href="http://twitter.com/intent/tweet?text=[ここにツイートしたい内容を書きます]"　onClick="window.open(encodeURI(decodeURI(this.href)),
+                <a href="http://twitter.com/intent/tweet?text= <%= @article.title %> http://www.noren3.com/article/<%= @article.id %> "　onClick="window.open(encodeURI(decodeURI(this.href)),
       'tweetwindow',
       'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
       ); return false;">
