@@ -4,7 +4,7 @@
       <%# image呼び出す %>
       <figure>
         <a href="article/<%= @article_photo.id %>" ><img src="<%= asset_path "article/#{@article_photo.photo}" %>" >
-        <figcaption>caption</figcaption></a>
+        <figcaption><%= @article_photo.title %></figcaption></a>
       </figure>
     </div>
 
