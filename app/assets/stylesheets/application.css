@@ -2241,6 +2241,13 @@ you can add resource intensive styles.
     width: 1070px;
   }
 
+  figure {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
   #explanation {
     width: 1070px;
     height: 140px;
