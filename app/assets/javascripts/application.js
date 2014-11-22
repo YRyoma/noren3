@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bxslider
+//= require jquery.infinitescroll
 //= require turbolinks
 //= require_tree .
 
