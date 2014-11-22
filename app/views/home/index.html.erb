@@ -2,6 +2,20 @@
 
     <div id="top-image">
       <%# image呼び出す %>
+
+      <script type="text/javascript">
+       (function($){
+         $(function() {
+
+         $('figure').hover(function(){
+            $(this).find('figcaption').fadeIn();
+         }, function() {
+            $(this).find('figcaption').fadeOut();
+         });
+
+        });
+        })(jQuery);
+      </script>
       <figure>
         <a href="article/<%= @article_photo.id %>" ><img src="<%= asset_path "article/#{@article_photo.photo}" %>" >
         <figcaption><%= @article_photo.title %></figcaption></a>
