@@ -822,16 +822,8 @@ figure {
     height: 700px;
     position: relative;
     margin: 0 auto;
-    -webkit-filter: grayscale(0%);
-    filter: gray;
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
 }
 
-figure:hover {
-  -webkit-filter: grayscale(0%);
-  filter: none;
-}
 figure img {
     position: absolute;
     left: 0;
@@ -842,9 +834,18 @@ figure figcaption {
     left: 0;
     top: 0;
     display: none;
+    font-size: 22px;
     color: #fff;
     box-sizing: border-box;
-    padding: 13px 12px;
+    padding: 16px 16px;
+    margin: 8px;
+    background-color: #222222;
+    border-radius: 3px;
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+
+
 }
 /*********************
 POSTS & CONTENT STYLES
@@ -1646,6 +1647,12 @@ tweeners.
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #top-image {
+    display: none;
+  }
+}
+
 
 @media only screen and (min-width: 481px) {
   /*
@@ -1702,6 +1709,13 @@ tweeners.
     display: block;
     clear: both;
   }
+
+  figure {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    margin: 0 auto;
+}
 
   /* end .entry-content */
   /*********************
@@ -1897,6 +1911,13 @@ you can add resource intensive styles.
     text-align: center;
     color: #898687;
   }
+
+  figure {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
 
 
   /*********************
