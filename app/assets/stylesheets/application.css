@@ -559,13 +559,20 @@ body {
 }
 
 .social-button {
-  margin: 4px 0 0 4px;
   display: inline-block;
   vertical-align: text-top;
 }
 
-.pocket-btn {
-  display: inline;
+.social-button img {
+  height: 32px;
+  width: 32px;
+  margin-top: -2px;
+}
+
+#facebook-button img {
+  height: 26px;
+  width: 26px;
+  margin-top: 0;
 }
 
 #twitter-button {
@@ -974,6 +981,7 @@ SINGLE PAGE
   float: left;
 }
 .single-article-header .entry-meta .byline {
+  margin-right: 10px;
   float: left;
   color: #898687;
 }
