@@ -64,6 +64,20 @@
 
 </script>
 
+<script type="text/javascript">
+(function($){
+    $(function() {
+         
+        $('figure').hover(function(){
+            $(this).find('figcaption').fadeIn();
+        }, function() {
+            $(this).find('figcaption').fadeOut();
+        });
+             
+    });
+})(jQuery);
+</script>
+
 
   </head>
 

@@ -2,7 +2,10 @@
 
     <div id="top-image">
       <%# image呼び出す %>
-        <a href="article/<%= @article_photo.id %>" ><img src="<%= asset_path "article/#{@article_photo.photo}" %>" ></a></li>
+      <figure>
+        <a href="article/<%= @article_photo.id %>" ><img src="<%= asset_path "article/#{@article_photo.photo}" %>" >
+        <figcaption>caption</figcaption></a>
+      </figure>
     </div>
 
     <div id="inner-content">

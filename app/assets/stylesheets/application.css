@@ -1869,6 +1869,31 @@ you can add resource intensive styles.
     color: #898687;
   }
 
+  figure {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+figure img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+figure figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    display: none;
+    background: #000;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 13px 12px;
+}
+
+
   /*********************
   POSTS & CONTENT STYLES
   *********************/
