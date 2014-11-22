@@ -822,6 +822,15 @@ figure {
     height: 700px;
     position: relative;
     margin: 0 auto;
+    -webkit-filter: grayscale(0%);
+    filter: gray;
+    -webkit-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+}
+
+figure:hover {
+  -webkit-filter: grayscale(0%);
+  filter: none;
 }
 figure img {
     position: absolute;
@@ -832,10 +841,7 @@ figure figcaption {
     position: absolute;
     left: 0;
     top: 0;
-    width: 300px;
-    height: 300px;
     display: none;
-    background: #000;
     color: #fff;
     box-sizing: border-box;
     padding: 13px 12px;
