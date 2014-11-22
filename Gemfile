@@ -36,6 +36,10 @@ gem 'acts-as-taggable-on', '~> 3.4'
 
 gem 'newrelic_rpm'
 
+gem "jquery-turbolinks" # Turbolinksで遷移したときもjQuery.ready()を呼び出してくれる
+
+gem "kaminari"
+
 group :development do
   gem "better_errors"
 end
