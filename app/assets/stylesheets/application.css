@@ -1586,6 +1586,16 @@ FOOTER STYLES
   color: #222222;
 }
 
+.single-culumn p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.single-culumn img {
+  width: 100%;
+  margin-top: 20px;
+}
+
 /*
 if you checked out the link above:
 http://www.alistapart.com/articles/organizing-mobile/
@@ -2357,6 +2367,11 @@ you can add resource intensive styles.
 }
 .single-culumn p {
   line-height: 1.9;
+}
+
+.single-culumn img {
+  width: 100%;
+  margin-top: 20px;
 }
 
 
