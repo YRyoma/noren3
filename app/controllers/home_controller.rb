@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	@articles = Article.page(params[:page])
+  	@articles = Article.page(params[:page]).order(id: :desc)
   	@article_photo = Article.last
 
   end
