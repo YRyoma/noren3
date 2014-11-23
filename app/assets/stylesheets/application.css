@@ -2149,8 +2149,8 @@ you can add resource intensive styles.
     text-align: left;
   }
   #member-introduction .member-show-main {
-    height: 228px;
-    width: 880px;
+    height: 240px;
+    width: 840px;
     margin: 60px auto;
     display: block;
     clear: both;
@@ -2159,11 +2159,11 @@ you can add resource intensive styles.
     height: 200px;
     width: 200px;
     float: left;
-    margin: 14px 30px 14px 30px;
+    margin: 20px 20px;
   }
   #member-introduction .member-show-main .member-content {
     height: 100%;
-    padding: 14px 0 0 0;
+    padding: 18px 0 0 0;
     width: auto;
   }
   #member-introduction .member-show-main .member-content h3 {
@@ -2173,6 +2173,10 @@ you can add resource intensive styles.
   #member-introduction .member-show-main .member-content p {
     font-size: 14px;
     margin: 0;
+  }
+
+  .member-show-introduction {
+    border: 1px solid #d2d2d2;
   }
 
   /*********************

@@ -5,7 +5,7 @@ class MemberController < ApplicationController
 
   def show
     @member = Member.find(params[:id])
-    @articles = @member.articles
+    @articles = @member.articles.order(id: :desc)
   end
 
   def edit
