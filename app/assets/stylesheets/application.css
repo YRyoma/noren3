@@ -1190,7 +1190,7 @@ MEMBER
   text-align: center;
 }
 #article-member-introduction .member-show-main {
-  width: 100%;
+  width: 87%;
   margin: 0 auto;
   display: block;
   clear: both;
@@ -1639,6 +1639,10 @@ tweeners.
   }
 
   #single-main .single-article .article-content p br {
+    display: none;
+  }
+
+  #article-member-introduction .member-show-main .member-content p br {
     display: none;
   }
 
