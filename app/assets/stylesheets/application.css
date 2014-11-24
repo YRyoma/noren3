@@ -1236,8 +1236,9 @@ MEMBER
 }
 #member-introduction .member-show-main .member-content {
   height: 100%;
+  width: 80%;
+  margin: auto;
   padding: 14px 0 0 0;
-  width: auto;
 }
 #member-introduction .member-show-main .member-content h3 {
   font-size: 16px;
@@ -2152,6 +2153,7 @@ you can add resource intensive styles.
     height: 240px;
     width: 840px;
     margin: 60px auto;
+    padding: 0;
     display: block;
     clear: both;
   }
