@@ -18,7 +18,11 @@
               <p class="byline vcard"><%= @article.created_at.strftime("%x") %></p>
 
               <div id="facebook-button" class="social-button">
-                <a href="http://www.facebook.com/sharer.php?u=<? echo get_permalink(); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;">
+                <a href="#" onclick=" 
+      window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+      return false;">
                 <img src="/assets/facebook.png">
                 </a>
               </div>
