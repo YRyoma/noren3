@@ -10,7 +10,7 @@
   <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 
   <meta property="og:image" content="http://www.noren3.com/assets/fb_logo.png" />
-   <meta property="og:description" content="<%= @article.content %>" />
+   <meta name="description" content= "<%= truncate(@article.content, :length => 120) %>">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
