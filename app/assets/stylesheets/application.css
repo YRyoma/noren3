@@ -1658,6 +1658,10 @@ tweeners.
     height: 100%;
   }
 
+  .member-index-show-main {
+    padding-top: 32px;
+  }
+
   .category-title h2 {
     font-size: 24px;
     font-weight: 400;
