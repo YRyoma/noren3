@@ -2157,6 +2157,7 @@ you can add resource intensive styles.
     margin: 0 0 10px 0;
   }
   #article-member-introduction .member-show-main .member-content p {
+    width: 100%;
     font-size: 14px;
     margin: 0;
   }
