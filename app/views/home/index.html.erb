@@ -1,34 +1,8 @@
   <div id="content">
 
-    <div id="top-image">
-      <%# image呼び出す %>
-
-      <script type="text/javascript">
-       (function($){
-         $(function() {
-
-         $('figure').hover(function(){
-            $(this).find('figcaption').fadeIn();
-         }, function() {
-            $(this).find('figcaption').fadeOut();
-         });
-
-        });
-        })(jQuery);
-      </script>
-      <figure>
-        <a href="article/<%= @article_photo.id %>" ><img src="<%= asset_path "article/#{@article_photo.photo}" %>" >
-        <figcaption><%= @article_photo.title %></figcaption></a>
-      </figure>
-    </div>
-
     <div id="inner-content">
 
       <div id="main" role="main">
-
-        <div class="article-sub-title">
-          <h2>NEW</h2>
-        </div>
 
       	<% @articles.each do |article| %><%# ”new” の記事の表示開始 ここから下をeach do で繰り返す %>
       	<article class="hentry" role="article">
