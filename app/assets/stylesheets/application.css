@@ -1819,14 +1819,14 @@ you can add resource intensive styles.
   }
 
   #logo {
-    height: 188px;
+    height: 152px;
     margin: 0 0 3px 0;
     text-align: center;
     border-bottom: 1px solid #d2d2d2;
     clear: both;
   }
   #logo img {
-    width: 240px;
+    width: 192px;
     margin-bottom: 32px;
   }
 
