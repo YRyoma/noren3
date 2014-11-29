@@ -1001,7 +1001,7 @@ SINGLE PAGE
   width: 100%;
 }
 #single-main .single-article .article-content p {
-  line-height: 1.9;
+  line-height: 1.8;
   font-size: 14px;
 }
 #single-main .single-article .article-content img {
@@ -2089,8 +2089,8 @@ you can add resource intensive styles.
     width: 680px;
   }
   #single-main .single-article .article-content p {
-    margin: 16px 0;
-    line-height: 1.9;
+    margin: 18px 0;
+    line-height: 1.8;
     font-size: 14px;
   }
   #single-main .single-article .article-content img {
@@ -2390,7 +2390,7 @@ you can add resource intensive styles.
   margin: 60px auto;
 }
 .single-culumn p {
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .single-culumn img {
