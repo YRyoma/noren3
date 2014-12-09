@@ -719,6 +719,7 @@ HEADER STYLES
 }
 
 #copy {
+  font-size: 14px;
   color: #898687;
   clear: both;
   margin: 8px 0 2px;
@@ -2274,6 +2275,8 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
+
+
   #main {
     width: 1070px;
   }
